@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    tools:context=".ui.transaction.flexiblecommodity.services.servicedialog.ServiceDialog">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_margin="40dp"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_margin="5sp"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_add_beneficiary"
+        android:contentDescription="@string/image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:id="@+id/title"
+        android:text="@string/Services"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/icon"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:id="@+id/view"
+            android:layout_below="@+id/icon"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:visibility="gone"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/view"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/spinner"
+            android:text="@string/MaxPrice"
+            android:visibility="gone"
+            android:id="@+id/maxP"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/view"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear"
+            android:layout_below="@id/spinner"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="number"
+                android:layout_margin="10dp"
+                android:id="@+id/input"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:inputType="numberDecimal"
+                android:layout_margin="10dp"
+                android:hint="@string/enterPrice"
+                android:id="@+id/input_price"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                tools:ignore="LabelFor" />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/purchase"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/linear"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:layout_alignEnd="@+id/linear"
+            android:text="@string/Purchase"
+            android:background="@drawable/btn_primary_color"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/cancel"
+            android:textAllCaps="false"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/linear"
+            android:layout_toStartOf="@+id/purchase"
+            android:text="@string/cancel"
+            android:background="@drawable/btn5_void"
+            />
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

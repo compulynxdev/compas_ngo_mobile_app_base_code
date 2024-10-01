@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent"
+    tools:context=".ui.beneficiary.verify_beneficiary.VerifyBeneficiaryActivity">
+
+    <include layout="@layout/layout_custom_toolbar"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/ll_toolbar"
+        android:background="#e0e0e0"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/criteria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/SearchVia"
+            android:textColor="#0b0b0b"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radioChoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/criteria"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rationNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/IdentificationNo"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/cardno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5sp"
+                android:text="@string/CardNo"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="visible">
+
+            <EditText
+                android:id="@+id/et_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:drawableStart="@drawable/ic_keypad"
+                android:drawablePadding="5dp"
+                android:hint="@string/select_criteria"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/btn_primary_color"
+                android:text="@string/search"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_toolbar"
+        android:background="@color/blueDark"
+        android:elevation="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/identificationo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFf"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/identificationo"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:text=""
+            android:textColor="#FFf"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/district"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#FFf"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_search">
+
+        <LinearLayout
+            android:id="@+id/ll_fragment_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/frame_fp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:minWidth="150dp"
+                android:text="@string/verify"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                tools:ignore="ContentDescription" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

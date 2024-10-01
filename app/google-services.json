@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "981503233931",
+    "firebase_url": "https://e-disbursement.firebaseio.com",
+    "project_id": "e-disbursement",
+    "storage_bucket": "e-disbursement.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981503233931:android:28367e0eae5d695d12e98e",
+        "android_client_info": {
+          "package_name": "com.compastbc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981503233931-jbhm3c432m74atropa33rpvnq1hla33p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.compastbc",
+            "certificate_hash": "d4dd82f2b7319f22009d461aee9bda3a66529a93"
+          }
+        },
+        {
+          "client_id": "981503233931-gvr25g877jmp0no9r0acg1qtss2khikc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.compastbc",
+            "certificate_hash": "af6cd1c89b79a2c9f967ad9508d40baac0cf625c"
+          }
+        },
+        {
+          "client_id": "981503233931-sogmml416jq2hmp79s02b53ppqu4qoi0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZQnYzkIR1jWr3kb_BMSt4Qute_eBAFZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981503233931-sogmml416jq2hmp79s02b53ppqu4qoi0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

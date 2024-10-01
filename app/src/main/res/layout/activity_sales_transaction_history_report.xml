@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".ui.reports.sales_transaction_history.SalesTransactionHistoryReportActivity">
+
+    <include layout="@layout/layout_custom_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dView"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/startDate"
+            android:padding="6dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/startDate"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/date_set"
+            android:textSize="20sp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/endDate"
+            android:textAlignment="center"
+            android:padding="6dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:id="@+id/endDate"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/date_set"
+            android:textSize="20sp"
+            >
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:padding="6dp"
+            android:textColor="@color/white"
+            android:id="@+id/search"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_primary_color"
+            android:textSize="20sp"
+            >
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_search"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:hint="@string/search"
+            android:imeOptions="actionDone"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/transaction_report_adapter" />
+
+        <TextView
+            android:id="@+id/tv_no_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/NoTransaction"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+    </FrameLayout>
+
+</LinearLayout>

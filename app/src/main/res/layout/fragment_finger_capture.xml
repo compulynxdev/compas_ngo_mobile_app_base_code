@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewcode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:padding="5dp"
+    android:background="@color/white"
+    tools:context=".ui.login.fingerprint.fingercapture.FingerCaptureFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/fingercardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:tint="#9008365E">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/ll_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/donel"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:src="@drawable/ic_close"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/done2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="5dp"
+                        android:layout_marginStart="100dp"
+                        android:src="@drawable/ic_close"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_top">
+
+                    <ImageView
+                        android:id="@+id/fingerprint"
+                        android:layout_width="400dp"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/bg_rectangle_frame"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/bg_fp_hands"
+                        android:tint="#90dfe1e4"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/l0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/l0"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/sl0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/sl0"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/l1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="-12dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/l1"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/sl1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="-12dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/sl1"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/l2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="-50dp"
+                        android:layout_marginEnd="20dp"
+                        android:src="@drawable/l1"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/sl2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="-50dp"
+                        android:layout_marginEnd="20dp"
+                        android:src="@drawable/sl1"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/l3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="-70dp"
+                        android:layout_marginEnd="53dp"
+                        android:src="@drawable/l1"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/sl3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="-70dp"
+                        android:layout_marginEnd="53dp"
+                        android:src="@drawable/sl1"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/l4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="-70dp"
+                        android:layout_marginEnd="103dp"
+                        android:src="@drawable/l1"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/sl4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="-70dp"
+                        android:layout_marginEnd="103dp"
+                        android:src="@drawable/sl1"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/r0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/r0"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/sr0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="15dp"
+                        android:src="@drawable/sr0"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/r1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="-13dp"
+                        android:src="@drawable/r1"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/sr1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="-13dp"
+                        android:src="@drawable/sr1"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/r2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="-50dp"
+                        android:src="@drawable/r1"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/sr2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="-50dp"
+                        android:src="@drawable/sr1"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/r3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="53dp"
+                        android:layout_marginTop="-65dp"
+                        android:src="@drawable/r1"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/sr3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="53dp"
+                        android:layout_marginTop="-65dp"
+                        android:src="@drawable/sr1"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/r4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="103dp"
+                        android:layout_marginTop="-65dp"
+                        android:src="@drawable/r1"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:id="@+id/sr4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="103dp"
+                        android:layout_marginTop="-65dp"
+                        android:src="@drawable/sr1"
+                        android:layoutDirection="ltr"
+                        android:visibility="gone"
+                        tools:ignore="ContentDescription" />
+
+                </FrameLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/imgs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fillViewport="true"
+                    android:scrollbarSize="1dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <!--android:layout_width="80dp"-->
+                        <com.compastbc.ui.custom.FingerPrintImageView
+                            android:id="@+id/img0"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bg_fp_border"
+                            android:paddingTop="0dp"
+                            android:paddingBottom="0dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bg_fp_no_img"
+                            tools:ignore="ContentDescription" />
+
+                        <com.compastbc.ui.custom.FingerPrintImageView
+                            android:id="@+id/img1"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bg_fp_border"
+                            android:paddingTop="0dp"
+                            android:paddingBottom="0dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bg_fp_no_img"
+                            tools:ignore="ContentDescription" />
+
+                        <com.compastbc.ui.custom.FingerPrintImageView
+                            android:id="@+id/img2"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bg_fp_border"
+                            android:paddingTop="0dp"
+                            android:paddingBottom="0dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bg_fp_no_img"
+                            tools:ignore="ContentDescription" />
+
+                        <com.compastbc.ui.custom.FingerPrintImageView
+                            android:id="@+id/img3"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bg_fp_border"
+                            android:paddingTop="0dp"
+                            android:paddingBottom="0dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bg_fp_no_img"
+                            tools:ignore="ContentDescription" />
+
+                        <com.compastbc.ui.custom.FingerPrintImageView
+                            android:id="@+id/img4"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bg_fp_border"
+                            android:paddingTop="0dp"
+                            android:paddingBottom="0dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bg_fp_no_img"
+                            tools:ignore="ContentDescription" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:scrollbarSize="1dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <com.compastbc.ui.custom.FingerPrintImageView
+                            android:id="@+id/img5"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bg_fp_border"
+                            android:paddingTop="0dp"
+                            android:paddingBottom="0dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bg_fp_no_img"
+                            tools:ignore="ContentDescription" />
+
+                        <com.compastbc.ui.custom.FingerPrintImageView
+                            android:id="@+id/img6"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bg_fp_border"
+                            android:paddingTop="0dp"
+                            android:paddingBottom="0dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bg_fp_no_img"
+                            tools:ignore="ContentDescription" />
+
+                        <com.compastbc.ui.custom.FingerPrintImageView
+                            android:id="@+id/img7"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bg_fp_border"
+                            android:paddingTop="0dp"
+                            android:paddingBottom="0dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bg_fp_no_img"
+                            tools:ignore="ContentDescription" />
+
+                        <com.compastbc.ui.custom.FingerPrintImageView
+                            android:id="@+id/img8"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bg_fp_border"
+                            android:paddingTop="0dp"
+                            android:paddingBottom="0dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bg_fp_no_img"
+                            tools:ignore="ContentDescription" />
+
+                        <com.compastbc.ui.custom.FingerPrintImageView
+                            android:id="@+id/img9"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bg_fp_border"
+                            android:paddingTop="0dp"
+                            android:paddingBottom="0dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bg_fp_no_img"
+                            tools:ignore="ContentDescription" />
+
+                        <com.compastbc.ui.custom.FingerPrintImageView
+                            android:id="@+id/img10"
+                            android:layout_width="80dp"
+                            android:layout_height="120dp"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/bg_fp_border"
+                            android:paddingTop="0dp"
+                            android:paddingBottom="0dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/bg_fp_no_img"
+                            tools:ignore="ContentDescription" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

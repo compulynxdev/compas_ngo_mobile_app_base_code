@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item android:id="@+id/LogOut"
+        app:showAsAction="never"
+        android:actionLayout="@layout/layout_custom_toolbar"
+        android:title="@string/LogOut" />
+
+    <item
+        android:id="@+id/updTrans"
+        app:showAsAction="never"
+        android:visible="false"
+        android:title="@string/updtxns" />
+
+    <item
+        android:id="@+id/updPending"
+        android:title="@string/updsync"
+        android:visible="false"
+        app:showAsAction="never" />
+
+
+    <item
+        android:id="@+id/updBenf"
+        android:visible="false"
+        app:showAsAction="never"
+        android:title="@string/uploadBenficiary" />
+
+    <item
+        android:id="@+id/updAgent"
+        app:showAsAction="never"
+        android:visible="false"
+        android:title="@string/uploadAgentBiometric" />
+
+
+    <item
+        android:id="@+id/updTopups"
+        app:showAsAction="never"
+        android:visible="false"
+        android:title="@string/updTopups" />
+    <item
+        android:id="@+id/updArchives"
+        app:showAsAction="never"
+        android:visible="false"
+        android:title="@string/updarchiv" />
+    <item
+        android:id="@+id/updAttendance"
+        android:visible="false"
+        app:showAsAction="never"
+        android:title="@string/updatten" />
+
+    <item
+        android:id="@+id/updActivities"
+        app:showAsAction="never"
+        android:visible="false"
+        android:title="@string/updact" />
+    <item
+        android:id="@+id/menu_app_update"
+        android:icon="@drawable/ic_download"
+        android:title="@string/update_the_app"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_language"
+        android:icon="@drawable/ic_lang"
+        android:title="@string/language"
+        app:showAsAction="ifRoom" />
+
+</menu>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.beneficiary.BeneficiaryActivity">
+
+    <include layout="@layout/layout_custom_toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ll_toolbar"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:id="@+id/views"
+            android:baselineAligned="false">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:visibility="gone"
+                    android:layout_margin="5dp"
+                    android:id="@+id/cv_create_beneficiary">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:id="@+id/v1"
+                            android:background="#2398e5"
+                            />
+                        <ImageView
+                            android:id="@+id/benf_icon"
+                            android:layout_below="@+id/v1"
+                            android:paddingTop="8dp"
+                            android:layout_width="90dp"
+                            android:src="@drawable/ic_add_beneficiary"
+                            android:layout_height="90dp"
+                            android:layout_centerHorizontal="true"
+                            android:contentDescription="@string/image" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/title_create_benf"
+                            android:textSize="18sp"
+                            android:textColor="#000"
+                            android:text="@string/CreateBeneficiary"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/benf_icon"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:id="@+id/cv_enroll"
+                    android:layout_margin="5dp"
+                    android:visibility="gone">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:id="@+id/v2"
+                            android:background="#2398e5"
+                            />
+                        <ImageView
+                            android:id="@+id/enroll_icon"
+                            android:layout_below="@+id/v2"
+                            android:layout_width="90dp"
+                            android:paddingTop="8dp"
+                            android:src="@drawable/ic_enroll"
+                            android:layout_height="90dp"
+                            android:layout_centerHorizontal="true"
+                            android:contentDescription="@string/image" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/title_enroll"
+                            android:textSize="18sp"
+                            android:textColor="#000"
+                            android:layout_below="@+id/enroll_icon"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/EnrollBeneficiary" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="5dp"
+                    android:id="@+id/cv_beneficiary_list">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:id="@+id/v11"
+                            android:background="#2398e5"
+                            />
+                        <ImageView
+                            android:id="@+id/search_benf_icon"
+                            android:layout_below="@+id/v11"
+                            android:layout_width="90dp"
+                            android:paddingTop="8dp"
+                            android:src="@drawable/ic_beneficiaries"
+                            android:layout_height="90dp"
+                            android:layout_centerHorizontal="true"
+                            android:contentDescription="@string/image" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/title_search_benf"
+                            android:textSize="18sp"
+                            android:textColor="#000"
+                            android:layout_below="@+id/search_benf_icon"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/BeneficiaryList" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="5dp"
+                    android:visibility="gone"
+                    android:id="@+id/cv_verify_benf">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:id="@+id/v22"
+                            android:background="#2398e5"
+                            />
+                        <ImageView
+                            android:id="@+id/verify_icon"
+                            android:layout_below="@+id/v22"
+                            android:paddingTop="8dp"
+                            android:layout_width="90dp"
+                            android:src="@drawable/ic_verifyfinger"
+                            android:layout_height="90dp"
+                            android:layout_centerHorizontal="true"
+                            android:contentDescription="@string/image" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/title_verify"
+                            android:textSize="18sp"
+                            android:textColor="#000"
+                            android:text="@string/VerifyBeneficiary"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@+id/verify_icon"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

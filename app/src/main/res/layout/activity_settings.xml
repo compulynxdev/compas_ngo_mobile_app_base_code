@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_custom_toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_margin="30dp"
+        android:id="@+id/settings">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/compas_tbc_v"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_version"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_app_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_version"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Configurations"
+            android:textColor="#2196f3"
+            android:textSize="17sp"
+            android:id="@+id/configuration_title"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@+id/tv_app_mode" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/IP_ADDRESS"
+            android:id="@+id/ip_title"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/configuration_title"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ip_title"
+            android:id="@+id/ip"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:imeOptions="actionNext"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/PORT_NUMBER"
+            android:id="@+id/port_title"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/ip"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/port_title"
+            android:id="@+id/port"
+            android:inputType="textPhonetic"
+            android:maxLines="1"
+            android:imeOptions="actionDone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/MacID"
+            android:layout_below="@id/port"
+            android:textColor="#2196f3"
+            android:textSize="20sp"
+            android:id="@+id/authentication"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="6dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/deviceId"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/authentication"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Update"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:id="@+id/btn_update"
+            android:layout_below="@+id/deviceId"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_primary_color"
+            />
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/next_arrow"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="IMAGE" />
+    </RelativeLayout>
+
+</LinearLayout>

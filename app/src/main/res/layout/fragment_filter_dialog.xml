@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.reports.salesbasketreport.salesbasketfilter.FilterDialogFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/filteration"
+                    android:textColor="#ffff"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/frame_startDate"
+                    android:background="@drawable/background_rectangle"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/startDate"
+                        android:textColor="@color/transparent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/emptyStartDate"
+                        android:text="@string/startDateWithoutColon"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/circle_white">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:padding="4dp"
+                            android:tint="@color/colorPrimaryDark"
+                            android:src="@drawable/ic_arrow_down_sign_to_navigate"
+                            tools:ignore="ContentDescription" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/frame_endDate"
+                    android:background="@drawable/background_rectangle"
+                    android:layout_margin="10dp"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/emptyEndDate"
+                        android:text="@string/endDateWithoutColon"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/endDate"
+                        android:textColor="@color/transparent"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/circle_white">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:padding="4dp"
+                            android:tint="@color/colorPrimaryDark"
+                            android:src="@drawable/ic_arrow_down_sign_to_navigate"
+                            tools:ignore="ContentDescription" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/frame_selectProgram"
+                    android:background="@drawable/background_rectangle"
+                    android:layout_margin="10dp"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:id="@+id/selectProgram"
+                        android:gravity="center"
+                        android:text="@string/selectProgram"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/circle_white">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:padding="4dp"
+                            android:tint="@color/colorPrimaryDark"
+                            android:src="@drawable/ic_arrow_down_sign_to_navigate"
+                            tools:ignore="ContentDescription" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/frame_selectCategory"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/background_rectangle"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:id="@+id/selectCategory"
+                        android:gravity="center"
+                        android:text="@string/selectCategory"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/circle_white">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:padding="4dp"
+                            android:tint="@color/colorPrimaryDark"
+                            android:src="@drawable/ic_arrow_down_sign_to_navigate"
+                            tools:ignore="ContentDescription" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/background_rectangle"
+                    android:layout_margin="10dp"
+                    android:id="@+id/frame_selectProduct"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/selectProduct"
+                        android:text="@string/selectProduct"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/circle_white">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:padding="4dp"
+                            android:tint="@color/colorPrimaryDark"
+                            android:src="@drawable/ic_arrow_down_sign_to_navigate"
+                            tools:ignore="ContentDescription" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:background="@drawable/background_rectangle"
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="10dp"
+                    android:id="@+id/frame_selectUom"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/selectUom"
+                        android:text="@string/SelectUom"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/circle_white">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:padding="4dp"
+                            android:tint="@color/colorPrimaryDark"
+                            android:src="@drawable/ic_arrow_down_sign_to_navigate"
+                            tools:ignore="ContentDescription" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/frame_selectBenf"
+                    android:background="@drawable/background_rectangle"
+                    android:layout_margin="10dp"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/selectBenf"
+                        android:text="@string/selectBeneficiary"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <FrameLayout
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="end|center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/circle_white">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:padding="4dp"
+                            android:tint="@color/colorPrimaryDark"
+                            android:src="@drawable/ic_arrow_down_sign_to_navigate"
+                            tools:ignore="ContentDescription" />
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_cancel"
+                        style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/btn5_void"
+                        android:text="@string/cancel"
+                        android:textAllCaps="false"
+                        android:textColor="#ffff" />
+
+                    <Button
+                        android:id="@+id/btn_reset"
+                        style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/btn5_void"
+                        android:text="@string/reset"
+                        android:textAllCaps="false"
+                        android:textColor="#ffff" />
+
+
+                    <Button
+                        android:id="@+id/btn_filter"
+                        style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/btn_primary_dark_color"
+                        android:text="@string/Ok"
+                        android:textAllCaps="false"
+                        android:textColor="#ffff" />
+
+                </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

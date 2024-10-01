@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.compastbc">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Wifi direct permission for verify beneficiary -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".Compas"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:theme,android:allowBackup,android:label">
+        <activity
+            android:name=".ui.reports.vendor_summary.VendorSummaryReport"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.agentpassword.ChangeAgentPassword"
+            android:configChanges="density|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.login.userpin.UserPinActivity"
+            android:configChanges="density|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.reports.sync_report.SyncReportActivity"
+            android:configChanges="density|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.reports.submit_report.SubmitTransactionReportActivity"
+            android:configChanges="density|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.update.UpdateActivity"
+            android:configChanges="density|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.reports.salesbasketreport.SalesBasketReport"
+            android:configChanges="density|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.reports.commodityreport.CommodityReportActivity"
+            android:configChanges="density|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.reports.void_transaction_report.VoidReportActivity"
+            android:configChanges="density|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.reports.sales_transaction_history.SalesTransactionHistoryReportActivity"
+            android:configChanges="density|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.reports.xreport.XReportActivity"
+            android:configChanges="density|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.reports.summary.SummaryReportActivity"
+            android:configChanges="density|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.voidtransaction.VoidTransactionActivity"
+            android:configChanges="density|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.transaction.transaction.cart.CartActivity"
+            android:configChanges="density|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.transaction.transaction.services.ServiceActivity"
+            android:configChanges="density|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.transaction.transaction.vouchers.VouchersActivity"
+            android:configChanges="density|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.transaction.transaction.TransactionActivity"
+            android:configChanges="density|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.changepassword.ChangePasswordActivity"
+            android:configChanges="density|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" /> <!-- Pos device sdk declaration -->
+        <uses-library
+            android:name="com.pos.device"
+            android:required="false" /> <!-- Google Map Support Lib -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+        <!-- Add file provider for api level above 21+ -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".ui.beneficiary.enroll_beneficiary.EnrollBeneficiaryActivity"
+            android:configChanges="density|orientation|keyboardHidden"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.cardactivation.CardActivation"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.beneficiary.create_beneficiary.BeneficiarySignatureActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.beneficiary.BeneficiaryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.beneficiary.create_beneficiary.CreateBeneficiary"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.beneficiary.list_beneficiary.BeneficiaryListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.beneficiary.verify_beneficiary.VerifyBeneficiaryActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.beneficiary.list_beneficiary.detail.BeneficiaryDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/SplashTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.settings.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.login.pin.PinActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.reports.ReportActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.login.fingerprint.UserFpEnrollActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.cardrestore.CardRestoreActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.cardrestore.restore.CardDataRestoreActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.cardformat.CardFormatActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.cardbalance.CardBalanceActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.synchronization.receive.ReceiveActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.synchronization.SynchronisationActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.synchronization.ShareActivity"
+            android:configChanges="orientation|screenSize"
+            android:launchMode="singleTask"
+            android:screenOrientation="fullSensor" /> <!-- Service for transfers -->
+        <activity
+            android:name=".ui.beneficiary.makerchecker.NetworkSetupActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor" />
+        <activity
+            android:name=".ui.beneficiary.makerchecker.SyncFPWithNetworkActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="fullSensor" />
+    </application>
+
+</manifest>

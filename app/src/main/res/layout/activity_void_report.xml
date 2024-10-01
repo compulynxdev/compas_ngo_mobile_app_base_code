@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.reports.void_transaction_report.VoidReportActivity">
+
+
+    <include layout="@layout/layout_custom_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dView"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/startDate"
+            android:padding="6dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/startDate"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/date_set"
+            android:textSize="20sp"
+            >
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/endDate"
+            android:textAlignment="center"
+            android:padding="6dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="1"
+            android:id="@+id/endDate"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/date_set"
+            android:textSize="20sp"
+            >
+        </TextView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:padding="6dp"
+            android:textColor="@color/white"
+            android:id="@+id/search"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_primary_color"
+            android:textSize="20sp"
+            >
+        </TextView>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:id="@+id/recycler_view"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/void_row"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:id="@+id/text"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/red_btn_bg_pressed_color"
+        android:textStyle="italic"
+        android:textSize="40sp"
+        android:text="@string/NoTransaction"
+        />
+
+
+</LinearLayout>

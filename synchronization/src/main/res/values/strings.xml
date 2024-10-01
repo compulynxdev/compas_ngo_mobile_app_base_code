@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Transfer notification manager -->
+    <string name="channel_service_name">Transfer Service</string>
+    <string name="channel_transfer_name">Ongoing Transfers</string>
+    <string name="channel_notification_name">Transfer Completion</string>
+
+    <!-- Transfer service -->
+    <string name="service_transfer_title">Compas Transfer</string>
+    <string name="service_transfer_server_title">Compas Service</string>
+    <string name="service_transfer_server_listening_text">Listening for incoming transfers</string>
+    <string name="service_transfer_status_receiving">Receiving items from %1$s…</string>
+    <string name="service_transfer_status_sending">Sending items to %1$s…</string>
+    <string name="service_transfer_status_success">Transfer with %1$s completed</string>
+    <string name="service_transfer_status_error">Transfer with %1$s failed: %2$s</string>
+    <string name="service_transfer_unknown_device">[unknown]</string>
+    <string name="service_transfer_notification_url">URL</string>
+
+</resources>

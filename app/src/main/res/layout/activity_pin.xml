@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.login.pin.PinActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:src="@drawable/ic_e_disbursement"
+            app:layout_constraintBottom_toTopOf="@+id/input"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:ignore="ContentDescription" />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/Enter_Pin"
+            android:imeOptions="actionDone"
+            android:inputType="numberPassword"
+            android:background="@null"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/view_num"
+            app:layout_constraintEnd_toEndOf="@+id/numericPad"
+            app:layout_constraintStart_toStartOf="@+id/numericPad"
+            app:layout_constraintTop_toBottomOf="@+id/img_logo"
+            tools:ignore="Autofill" />
+
+        <View
+            android:id="@+id/view_num"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/gray"
+            app:layout_constraintBottom_toTopOf="@+id/numericPad"
+            app:layout_constraintEnd_toEndOf="@+id/input"
+            app:layout_constraintStart_toStartOf="@+id/input"
+            app:layout_constraintTop_toBottomOf="@+id/input" />
+
+        <LinearLayout
+            android:id="@+id/numericPad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_num">
+
+            <LinearLayout
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/bg_cricle_btn"
+                    android:padding="6dip"
+                    android:text="@string/One"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/bg_cricle_btn"
+                    android:padding="6dip"
+                    android:text="@string/Two"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/bg_cricle_btn"
+                    android:padding="6dip"
+                    android:text="@string/Three"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/bg_cricle_btn"
+                    android:padding="6dip"
+                    android:text="@string/Four"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@+id/button4"
+                    android:background="@drawable/bg_cricle_btn"
+                    android:padding="6dip"
+                    android:text="@string/Five"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_toEndOf="@+id/button5"
+                    android:background="@drawable/bg_cricle_btn"
+                    android:padding="6dip"
+                    android:text="@string/Six"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp">
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/bg_cricle_btn"
+                    android:padding="6dip"
+                    android:text="@string/Seven"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@+id/button7"
+                    android:background="@drawable/bg_cricle_btn"
+                    android:padding="6dip"
+                    android:text="@string/Eight"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_toEndOf="@+id/button8"
+                    android:background="@drawable/bg_cricle_btn"
+                    android:padding="6dip"
+                    android:text="@string/Nine"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/buttonDeleteBack"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/bg_cricle_btn"
+                    android:padding="6dip"
+                    android:text="@string/Clear"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/button0"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_toEndOf="@+id/buttonDeleteBack"
+                    android:background="@drawable/bg_cricle_btn"
+                    android:padding="6dip"
+                    android:text="@string/Zero"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/buttonOk"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_toEndOf="@+id/button0"
+                    android:background="@drawable/bg_btn_login"
+                    android:padding="6dip"
+                    android:text="@string/Login"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

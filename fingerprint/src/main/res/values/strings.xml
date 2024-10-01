@@ -1,0 +1,12 @@
+<resources>
+    <!--FingerPrintScanner Message-->
+    <string name="error_fp_scanner">Getting the Scanner Ready</string>
+    <string name="error_fp_re_scanner">Reinitialise Scanner</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="secugen_fingerprint">SecuGen Fingerprint</string>
+    <string name="fingerprint_init_failed">Fingerprint device initialization failed!</string>
+    <string name="fingerprint_device_not_found">Please attach fingerprint device.</string>
+    <string name="secugen_fingerprint_not_found">SecuGen fingerprint sensor not found!</string>
+    <string name="Ok">OK</string>
+
+</resources>

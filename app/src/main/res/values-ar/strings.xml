@@ -1,0 +1,632 @@
+<resources>
+    <string name="app_name">التوزيع الإلكتروني</string>
+
+    <!--App Keys-->
+    <string name="nfc_package_key">445d15b5f9505713dcdf7ec93ab9126f</string>
+    <string name="nfc_offline_key">P8cHLNWJn+ebAe9RrmPOjHGwhWpeKzbqz7v0LuKF3w5ovmNTRkq/K/Nog6zrq17M39BBsO4yImvk1uRSsFQVTw==</string>
+
+    <!--App Message-->
+    <string name="api_retry_error">الرجاء اعادة المحاولة!</string>
+    <string name="error">خطأ!</string>
+    <string name="Ok">حسنا</string>
+    <string name="alert">إنذار!</string>
+    <string name="feature_error">هذه الميزة غير مدعومة من قبل الجهاز</string>
+    <string name="some_error">حدث خطأ ما!</string>
+    <string name="not_supported">غير مدعوم</string>
+    <string name="card_not_supported">البطاقة غير مدعومة</string>
+    <string name="timeout_error">اضغط على مهلة البطاقة</string>
+    <string name="process_cancel_by_user">تم إلغاء العملية بواسطة المستخدم</string>
+    <string name="connection_error">يرجى التحقق من اتصالك بالإنترنت وحاول مرة أخرى!</string>
+    <string name="alert_out_of_memory">ذاكرة الهاتف ممتلئة</string>
+    <string name="under_development">تحت التطوير</string>
+    <string name="under_development_nfc">NFC قيد التطوير</string>
+
+    <!--Server Message-->
+    <string name="UnauthorisedAccess">الوصول غير المصرح به !!</string>
+    <string name="error_404">    حالة 404HTTP  - غير معثور عليه!!</string>
+    <string name="ServerError">وجه الفتاة! واجهنا خطأ داخلي. يرجى التحقق مرة أخرى بعد قليل.</string>
+
+    <!--NFC Message-->
+    <string name="error_nfc_not_support">جهازك لا يدعم NFC</string>
+    <string name="error_nfc_disable">يرجى تمكين NFC</string>
+    <string name="msg_enable_nfc">قم بتشغيل NFC</string>
+
+    <!--FingerPrintScanner Message-->
+    <string name="error_fp_scanner">تجهيز الماسح الضوئي</string>
+    <string name="error_fp_re_scanner">إعادة تهيئة الماسح الضوئي</string>
+    <string name="please_wait">ارجوك انتظر…</string>
+    <string name="secugen_fingerprint">بصمة Secugen</string>
+    <string name="fingerprint_init_failed">فشل تهيئة جهاز بصمة الإصبع!</string>
+    <string name="fingerprint_device_not_found">يرجى إرفاق جهاز بصمة الإصبع.</string>
+    <string name="secugen_fingerprint_not_found">لم يتم العثور على مستشعر بصمة الإصبع</string>
+
+    <!--Login Controller Message-->
+    <string name="next_button">التالى</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="invalid_username">الرجاء إدخال اسم مستخدم صالح.</string>
+    <string name="empty_username">الرجاء إدخال اسم المستخدم.</string>
+    <string name="NotHaveSpace"> تحرير بعض المساحة أولاً  ليس لديك مساحة كافية … الرجاء</string>
+    <string name="NotGettingLocation">غير قادر على الحصول على الموقع. يرجى المحاولة بعد مرور بعض الوقت</string>
+
+    <!--Pin Controller Message-->
+    <string name="Zero">٠</string>
+    <string name="One">١</string>
+    <string name="Two">٢</string>
+    <string name="Three">٣</string>
+    <string name="Four">٤</string>
+    <string name="Five">٥</string>
+    <string name="Six">٦</string>
+    <string name="Seven">٧</string>
+    <string name="Eight">٨</string>
+    <string name="Nine">٩</string>
+    <string name="Ten">١٠</string>
+    <string name="Enter_Pin">أدخل رقم التعريف الشخصي</string>
+    <string name="Login">تسجيل الدخول</string>
+    <string name="Clear">واضح</string>
+    <string name="InvalidPassword">كلمة السر غير مطابقة، برجاء حاول مرة أخرى</string>
+
+    <!--UserFpEnrollment Controller Message-->
+    <string name="username_colum">اسم المستخدم :</string>
+    <string name="save">حفظ</string>
+    <string name="district">منطقة</string>
+    <string name="district_colm">منطقة :</string>
+
+    <!--ImageCapture Message-->
+    <string name="capture">إلتقاط</string>
+
+    <!--Finger Capture Controller Message-->
+    <string name="error_duplicate_title">خطأ مكرر</string>
+    <string name="error_quality_title">خطأ في الجودة</string>
+    <string name="error_capture_title">خطأ في الالتقاط</string>
+    <string name="msg_recapture">يرجى إعادة الالتقاط مرة أخرى!</string>
+    <string name="msg_already_capture">تم التقاط بصمة الإصبع هذه بالفعل!</string>
+
+    <!--Image Selection-->
+    <string name="take_photo">الة تصوير</string>
+    <string name="cancel">إلغاء</string>
+    <string name="gallery">صالة عرض</string>
+    <string name="select">تحديد</string>
+
+    <!--Other Controller Message-->
+    <string name="About">حول</string>
+    <string name="Configurations">التكوينات</string>
+    <string name="IP_ADDRESS">أدخل عنوان IP الخاص بك</string>
+    <string name="PORT_NUMBER">أدخل رقم المنفذ الخاص بك</string>
+    <string name="MacID">MAC ID</string>
+    <string name="Settings">الإعدادات</string>
+    <string name="EmptyInputs">يرجى إدخال الحقول !!!</string>
+    <string name="compas_tbc_v">COMPAS التوزيع الإلكتروني الخامس</string>
+    <string name="InvalidRole">دور غير صالح !! الوصول غير المصرح به</string>
+    <string name="noUsers">لم يتم العثور على مستخدمين !!!</string>
+    <string name="InvalidUsername">اسم مستخدم غير صحيح !!!</string>
+    <string name="Transactions">المعاملات</string>
+    <string name="image">IMAGE</string>
+    <string name="Update">تحديث</string>
+    <string name="CardActivation">تفعيل البطاقة</string>
+    <string name="CardBalance">رصيد البطاقة</string>
+    <string name="ChangeCardPin">تغيير كلمة المرور</string>
+    <string name="FormatCard">تنسيق البطاقة</string>
+    <string name="Reports">التقارير</string>
+    <string name="VoidTransaction">معاملة باطلة</string>
+    <string name="ErrorInDownload">خطأ في تحميل البيانات !!</string>
+    <string name="Menus">القوائم</string>
+    <string name="Beneficiary">المستفيد</string>
+    <string name="LogOut">تسجيل خروج</string>
+    <string name="SummaryReports">تقارير الملخص</string>
+    <string name="SalesTransactionHistory">تقرير تاريخ المبيعات / المعاملات</string>
+    <string name="sales_txn_history_title">سجل المبيعات / المعاملات</string>
+    <string name="voidReport">تقرير المعاملات باطلة</string>
+    <string name="sales">تقرير سلة المبيعات</string>
+    <string name="Xreports">تقرير X</string>
+    <string name="commodity_report">تقرير السلع اليومي</string>
+    <string name="submitreports">إرسال تقرير المعاملات</string>
+
+    <!--Beneficiary tab-->
+    <string name="CreateBeneficiary">إنشاء المستفيد</string>
+    <string name="EnrollBeneficiary">تسجيل المستفيد</string>
+    <string name="BeneficiaryList">قائمة المستفيدين</string>
+    <string name="beneficiary_detail">تفاصيل المستفيد</string>
+    <string name="beneficiary_edit">تحرير المستفيد</string>
+    <string name="VerifyBeneficiary">تحقق من المستفيد</string>
+
+    <!--Create Beneficiary-->
+    <string name="please_fill_the_following_beneficiary_information">يرجى ملء معلومات المستفيد التالية</string>
+    <string name="first_name">الاسم الاول</string>
+    <string name="enter_first_name">أدخل الاسم الأول</string>
+    <string name="last_name">الكنية</string>
+    <string name="enter_last_name">إدخال اسم آخر</string>
+    <string name="identification_type">نوع الهوية :</string>
+    <string name="adhar">Aadhar Card</string>
+    <string name="IdentificationNumber">رقم الهوية</string>
+    <string name="IdentificationNo">رقم التعريف</string>
+    <string name="EnterIdNo">أدخل رقم التعريف</string>
+    <string name="date_of_birth">تاريخ الولادة</string>
+    <string name="select_date_of_birth">حدد تاريخ الميلاد</string>
+    <string name="selectgender">يرجى تحديد الجنس :</string>
+    <string name="male">الذكر</string>
+    <string name="female">أنثى</string>
+    <string name="correspondence_address">عنوان المراسلة</string>
+    <string name="enter_address">أدخل عنوانك</string>
+    <string name="benfGroup">مجموعة المستفيدين</string>
+    <string name="location">موقعك :</string>
+    <string name="get_signature">احصل على التوقيع</string>
+    <string name="clear_pad">لوحة واضحة</string>
+    <string name="save_signature">حفظ التوقيع</string>
+    <string name="please_enter_name">يرجى إدخال الاسم</string>
+    <string name="please_enter_first_name">يرجى إدخال الاسم الأول</string>
+    <string name="please_enter_last_name">يرجى إدخال الاسم الأخير</string>
+    <string name="please_select_gender">يرجى تحديد الجنس</string>
+    <string name="please_provide_gender">يرجى تحديد الجنس!!</string>
+    <string name="please_select_dob">يرجى تحديد تاريخ ميلادك</string>
+    <string name="enter_identificationno">يرجى إدخال رقم التعريف الخاص بك</string>
+    <string name="please_provide_address">يرجى تقديم عنوان السكن الخاص بك</string>
+
+    <string name="reports">التقارير</string>
+    <string name="agreement">أوافق على الشروط والأحكام</string>
+    <string name="ScanQr">مسح رمز الاستجابة السريعة</string>
+    <string name="ManuallyActivate">تنشيط يدويًا</string>
+    <string name="activate">تفعيل</string>
+    <string name="Programme">برنامج</string>
+    <string name="gender">جنس</string>
+    <string name="Name">اسم</string>
+    <string name="CardNumber">رقم البطاقة</string>
+    <string name="CardNumberColon">رقم البطاقة :</string>
+    <string name="CardNo">رقم البطاقة</string>
+    <string name="qrerror">حدث خطأ أثناء مسح رمز الاستجابة السريعة</string>
+    <string name="success">نجاح</string>
+    <string name="BeneficiaryAdded">تمت إضافة المستفيد بنجاح</string>
+    <string name="beneficiary_update">تم تحديث المستفيد بنجاح</string>
+    <string name="PleaseCaptureImage">يرجى التقاط صورة !!</string>
+    <string name="PleaseCaptureFingerPrints">يرجى التقاط بصمات الأصابع !!</string>
+    <string name="AgentBiometricSaved">تم حفظ المقاييس الحيوية للعامل بنجاح</string>
+    <string name="MobileNumber">رقم الهاتف المحمول</string>
+    <string name="enter_mobile">أدخل رقم الهاتف المحمول</string>
+    <string name="search">بحث</string>
+    <string name="select_criteria">  معايير البحث</string>
+    <string name="SearchVia">البحث عن طريق:</string>
+    <string name="PleaseSelectCriteria">يرجى تحديد معايير البحث !!</string>
+    <string name="PleaseEnterInput">الرجاء إدخال المدخلات</string>
+
+    <string name="BiometricAlreadyCaptured">تم التقاط القياسات الحيوية بالفعل</string>
+
+    <string name="Enroll">التسجيل</string>
+    <string name="False">خاطئة</string>
+    <string name="True">صحيح</string>
+    <string name="biostatus">الحالة الحيوية</string>
+    <string name="datee">25/10/2010</string>
+
+    <string name="name">اسم :</string>
+    <string name="IdNoColon">رقم الهوية :</string>
+
+    <string name="MinimumFingerError">يجب القبض على الأصابع !!</string>
+    <string name="BiometricUploaded">تم تحميل القياسات الحيوية بنجاح.</string>
+
+    <!--Card Activate Controller-->
+    <string name="title_loading">جار التحميل…</string>
+    <string name="title_card_tap">من فضلك اضغط على البطاقة</string>
+    <string name="card_tap_activate">اضغط على البطاقة للتفعيل</string>
+    <string name="card_activated">تم تفعيل البطاقة بنجاح</string>
+    <string name="card_activate_fail">لم يتم تفعيل البطاقة بنجاح. يرجى النقر على البطاقة والانتظار</string>
+
+    <!--Card Format Controller-->
+    <string name="card_format">بطاقة التنسيق</string>
+    <string name="card_remove">يرجى عدم إزالة البطاقة …</string>
+    <string name="card_tap_format">انقر لتهيئة البطاقة</string>
+    <string name="card_format_success">تم تنسيق البطاقة بنجاح</string>
+    <string name="card_error_format">خطأ في تنسيق هذه البطاقة</string>
+
+    <!--Card Restore Controller-->
+    <string name="title_card_restore">استعادة البطاقة</string>
+    <string name="label_card_tap_restore">اضغط على البطاقة لاستعادة بيانات البطاقة</string>
+    <string name="card_restore_success">استعادة بيانات البطاقة بنجاح</string>
+
+    <!--Card Balance Controller-->
+    <string name="card_reading">قراءة البطاقة</string>
+    <string name="card_tap_check_bal">اضغط على البطاقة للتحقق من الرصيد</string>
+    <string name="card_error_data">خطأ في معالجة البيانات من هذه البطاقة</string>
+    <string name="card_error_read_data">حدث خطأ أثناء قراءة البيانات من البطاقة</string>
+    <string name="card_error_write_data">حدث خطأ أثناء كتابة البيانات على البطاقة</string>
+    <string name="no_topups">لم يتم العثور على عمليات تعبئة على هذه البطاقة</string>
+
+    <!--Verify Beneficiary Controller-->
+    <string name="card_tap_benf_info">اضغط على البطاقة لمعلومات المستفيد</string>
+    <string name="card_tap_purchase">انقر للشراء</string>
+    <string name="great">عظيم</string>
+    <string name="checkTxn">اضغط على البطاقة لجلب المعاملة</string>
+    <string name="cardHolderInfo">إسم صاحب البطاقة :</string>
+    <string name="newpass">كلمة السر الجديدة</string>
+    <string name="confirmpass">تأكيد كلمة المرور</string>
+    <string name="NewPassMatchConfirmPass">يجب أن تكون كلمتا المرور متماثلتين</string>
+    <string name="card_change_password">اضغط على البطاقة لتغيير كلمة المرور</string>
+    <string name="tap_right_card">يرجى النقر على البطاقة الصحيحة !!</string>
+    <string name="change_password_successfully">تم تغيير الرقم السري بنجاح</string>
+    <string name="UnableToWrite">غير قادر على كتابة البيانات على هذه البطاقة !!</string>
+    <string name="UnableToRead">غير قادر على قراءة البيانات. يرجى التأكد من تفعيل هذه البطاقة</string>
+    <string name="fetching_card_data">يُرجى الانتظار أثناء جلب بيانات البطاقة ..</string>
+    <string name="card_pin_size">يجب أن يكون حجم دبوس البطاقة أربعة أرقام</string>
+    <string name="please_provide_input_for_update">يرجى تقديم مدخلات لتحديث التفاصيل !!</string>
+    <string name="data_updated">تم تحديث البيانات بنجاح</string>
+    <string name="verify">تحقق</string>
+    <string name="txt_no_benf">لم يتم العثور على مستفيدين</string>
+    <string name="card_tap_to_purchase">اضغط على البطاقة للشراء</string>
+
+    <!-- Transactions strings-->
+    <string name="CardBlocked">تم حظر هذه البطاقة بالفعل !!</string>
+    <string name="cardNotActivated">هذه البطاقة غير مفعلة !!</string>
+    <string name="card_read_fail">قراءة البطاقة فشلت !! أو الرجاء النقر على البطاقة بشكل صحيح</string>
+    <string name="card_clear_format">هل أنت متأكد أنك تريد مسح جميع البيانات المخزنة في البطاقة؟</string>
+    <string name="NoTopups">لم يتم العثور على شحنات !!</string>
+    <string name="NoPrograms">لم يتم العثور على برامج !!</string>
+    <string name="touch_to_verify">المس للتحقق</string>
+    <string name="Vouchers">قسائم</string>
+    <string name="NoVouchers">لم يتم العثور على قسائم !!</string>
+    <string name="Services">خدمات</string>
+    <string name="NoServices">لم يتم العثور على خدمات !!</string>
+    <string name="NotAbleToGetUom">لا تستطيع الحصول على وحدة القياس !!</string>
+    <string name="Purchase">عملية الشراء</string>
+    <string name="SelectUom">حدد وحدة القياس</string>
+    <string name="Quantity">كمية</string>
+    <string name="MaxPrice">السعر الأقصى:</string>
+    <string name="Cash">مال يدفع نقدا</string>
+    <string name="ProgrammeName">اسم البرنامج</string>
+    <string name="Value">القيمة</string>
+    <string name="NoBenfFound">لم يتم العثور على مستفيد !!</string>
+    <string name="PleaseEnterQuantity">الرجاء إدخال الكمية !!</string>
+    <string name="PleaseSelectUom">برجاء اختيار وحدة القياس !!</string>
+    <string name="AmountExceeds">المبلغ الإجمالي يتجاوز المبلغ المخصص !!</string>
+    <string name="EmptyCart">كنت قد حددت بعض الخدمات … إما القيام بالمعاملات أو مسح سلة التسوق الخاصة بك !!</string>
+    <string name="noitems">عدد العناصر:</string>
+    <string name="totalPrice">السعر الكلي :</string>
+    <string name="submit">إرسال</string>
+    <string name="Yes">نعم</string>
+    <string name="removeSure">هل أنت واثق ؟</string>
+    <string name="removeproduct">سيؤدي هذا إلى إزالة المنتج المحدد. العمل لا رجعة فيه.</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="PleaseWait">أرجو الإنتظار!</string>
+    <string name="TranscationProgress">المعاملة جارية …</string>
+    <string name="invalid_card_txn">هذه ليست بطاقة صالحة. الرجاء الضغط على بطاقة المستفيد - %s</string>
+    <string name="transactionSuccess">تمت المعاملة بنجاح. انقر فوق "موافق" لطباعة الإيصال.</string>
+    <string name="PleaseEnterAmount">الرجاء إدخال المبلغ النقدي !!</string>
+    <string name="tapVoid">اضغط على البطاقة لإبطال المعاملة</string>
+    <string name="receiptNo">عدد إيصال :</string>
+    <string name="Date_Col">تاريخ :</string>
+    <string name="tAmt">المبلغ الإجمالي :</string>
+    <string name="tapToVoid">اضغط على البطاقة لإبطال المعاملة …</string>
+    <string name="SuccessVoid">تم إلغاء المعاملة بنجاح</string>
+    <string name="TotalCardHolders">إجمالي حاملي البطاقة:</string>
+    <string name="TotalTopups">إجمالي إعادة التعبئة:</string>
+    <string name="TotalCommodity">إجمالي السلع:</string>
+    <string name="TotalTransaction">إجمالي المعاملات:</string>
+    <string name="BlockCard">حظر البطاقات:</string>
+    <string name="TotalTopupLogs">إجمالي سجلات التعبئة:</string>
+    <string name="line">-----------------------------------------------------------------</string>
+    <string name="stringDate">12/03/2017</string>
+    <string name="line1">--------------------------------------------------------------------</string>
+    <string name="purvalue">قيمة الشراء</string>
+    <string name="NetSales">صافي المبيعات :</string>
+    <string name="VoidAmount">المبلغ الإجمالي الفارغ:</string>
+    <string name="salesAmt">مبلغ المبيعات:</string>
+    <string name="voidCount">عدد الفراغ:</string>
+    <string name="txnCount_col">عدد المعاملات:</string>
+    <string name="txnCount">عدد المعاملات</string>
+    <string name="Print">طباعة</string>
+    <string name="noItem">لم يتم شراء عنصر في هذا اليوم</string>
+    <string name="filter_icon">رمز التصفية</string>
+    <string name="filteration">الترشيح</string>
+    <string name="reset">إعادة تعيين</string>
+    <string name="filter">منقي</string>
+    <string name="endDate">تاريخ الانتهاء :</string>
+    <string name="startDate">تاريخ البدء :</string>
+    <string name="Commodity">اسم سلعة :</string>
+    <string name="NoTransaction">لم يتم العثور على معاملات !!</string>
+    <string name="transId">رقم المعاملة :</string>
+    <string name="Amount">كمية</string>
+    <string name="Amount_Col">كمية :</string>
+    <string name="Date">تاريخ</string>
+    <string name="NoTransactionCommodity">لم يتم العثور على سلع المعاملات !!</string>
+    <string name="CommodityName">اسم سلعة</string>
+    <string name="TotalAmount">المبلغ الإجمالي :</string>
+    <string name="totalAmount">المبلغ الإجمالي</string>
+    <string name="benfCount">المستفيدون</string>
+    <string name="CategoryName">اسم التصنيف</string>
+    <string name="ProductName">اسم المنتج</string>
+    <string name="Uom">وحدة قياس</string>
+    <string name="PrintedSuccessfully">طبع بنجاح</string>
+    <string name="PrinterError">حدث خطأ أثناء الطباعة !!</string>
+    <string name="PrinterNotPaired">تعذر الحصول على عنوان الطابعة ؛ تحقق مما إذا كان قد تم إقران الطابعة !!</string>
+    <string name="NoDataToPrint">لا توجد بيانات للطباعة !!</string>
+    <string name="NoBiometricFound">لم يتم العثور على القياسات الحيوية !!</string>
+    <string name="NoFPMatch">لا تطابق بصمات الأصابع !!</string>
+    <string name="LowFPQuality">خطأ في الجودة ، يرجى المحاولة مرة أخرى !!</string>
+    <string name="NotInitialise">الماسح الضوئي لبصمات الأصابع غير مهيأ !!</string>
+    <string name="FingerPrintNotMatched">بصمة الاصبع لا تتطابق !!</string>
+    <string name="NoDataToDownload">لا توجد بيانات للتحميل !!</string>
+    <string name="unablepdf">غير قادر على تولي Pdf  !!</string>
+    <string name="generatedPdf">تم إنشاء ملف Pdf بنجاح.</string>
+    <string name="startDateWithoutColon">تاريخ البدء</string>
+    <string name="endDateWithoutColon">تاريخ الانتهاء</string>
+    <string name="selectProgram">حدد البرنامج</string>
+    <string name="selectCategory">اختر الفئة</string>
+    <string name="selectProduct">حدد المنتج</string>
+    <string name="selectBeneficiary">حدد المستفيد</string>
+    <string name="pleaseSelectStartDate">يرجى تحديد تاريخ البدء !!</string>
+    <string name="pleaseSelectEndDate">يرجى تحديد تاريخ الانتهاء !!</string>
+    <string name="pleaseSelectProgram">يرجى تحديد البرنامج !!</string>
+    <string name="pleaseSelectCategory">الرجاء تحديد الفئة قبل المنتج !!</string>
+    <string name="pleaseSelectCommodity">الرجاء تحديد السلعة قبل uom !!</string>
+    <string name="NoCategory">لم يتم العثور على فئة !!</string>
+    <string name="NoCommodity">لم يتم العثور على سلعة !!</string>
+    <string name="NoUoms">لم يتم العثور على وحدة قياس !!</string>
+    <string name="NoBeneficiaries">لم يتم العثور على مستفيدين !!</string>
+    <string name="titleName">عنوان</string>
+    <string name="col1">العمود 1</string>
+    <string name="col2">العمود 2</string>
+    <string name="col3">العمود 3</string>
+    <string name="maxPrice">أقصى سعر</string>
+    <string name="sessionTimeOut">مهلة جلسة!!</string>
+    <string name="noInternet">لا يوجد اتصال بالإنترنت</string>
+    <string name="qty">الكمية:</string>
+    <string name="openingBal">الرصيد الافتتاحي :</string>
+    <string name="txnValue">قيمة الصفقة :</string>
+    <string name="currentBal">الرصيد الحالي :</string>
+
+    <array name="serviceSpinner">حدد Uom</array>
+    <string name="alert_exit">اضغط مرة أخرى للخروج</string>
+    <string name="apkIsOnline">يعمل في وضع عدم الاتصال. يرجى تثبيت تطبيق وضع عدم الاتصال بالإنترنت وإعادة المحاولة !!</string>
+    <string name="This">هذه</string>
+    <string name="user">المستعمل</string>
+    <string name="language">اختار اللغة</string>
+    <string name="english">الإنجليزية</string>
+    <string name="arabic">عربى</string>
+    <string name="change_language">تغيير اللغة</string>
+    <string name="done">منجز</string>
+    <string name="Master">رئيس</string>
+
+    <string name="CardHolders">حاملي البطاقة</string>
+    <string name="PleaseUploadPendindTrasactionsAndArchiveTransactions">يرجى تحميل المعاملات المعلقة وأرشفة المعاملات قبل التحديث ..</string>
+    <string name="PleaseUploadBeneficiaries">يرجى تحميل بيانات المستفيدين قبل التحديث .....</string>
+    <string name="PleaseUploadAgents">يرجى تحميل بيانات الوكلاء قبل التحديث .....</string>
+    <string name="DataUpdated">تم تحديث البيانات بنجاح</string>
+    <string name="downloadingMaster">تنزيل البيانات الرئيسية</string>
+    <string name="downloadingBeneficiary">تنزيل بيانات المستفيد</string>
+    <string name="Topups">اشحن رصيدك</string>
+    <string name="Beneficiaries">المستفيدون</string>
+    <string name="zeroPercent">انتهى 0٪ يرجى الانتظار …</string>
+    <string name="Received">تم الاستلام</string>
+    <string name="Expected">متوقع</string>
+    <string name="Progress">تقدم</string>
+    <string name="downloadTopup">تنزيل Top Up</string>
+    <string name="Notopupsdownloaded">لم يتم تنزيل أي عمليات تكبير !!</string>
+    <string name="fingerprintEnrollmentNotConfigured">لم يتم تكوين تسجيل بصمات الأصابع.</string>
+    <string name="successBiometricCapture">تم تحديث البيانات البيومترية بنجاح.</string>
+    <string name="idNotExist">رقم التعريف غير موجود</string>
+    <string name="cardNotExist">رقم البطاقة غير موجود</string>
+    <string name="yourBioStatusIs">حالتك البيومترية</string>
+    <string name="KindlyApprove">يرجى الموافقة</string>
+
+
+    <!-- Transfer service -->
+    <string name="service_transfer_title">Compas Transfer</string>
+    <string name="service_transfer_server_title">Compas Service</string>
+    <string name="service_transfer_server_listening_text">الاستماع للتحويلات الواردة</string>
+    <string name="service_transfer_status_receiving">جاري تلقي العناصر من٪ 1 $ s …</string>
+    <string name="service_transfer_status_sending">إرسال العناصر إلى٪ 1 $ s …</string>
+    <string name="service_transfer_status_success">اكتمل النقل مع٪ 1 $ s</string>
+    <string name="service_transfer_status_error">فشل النقل مع٪ 1 $ s:٪ 2 $ s</string>
+    <string name="service_transfer_unknown_device">[مجهول]</string>
+    <string name="service_transfer_notification_url">URL</string>
+
+    <!-- Transfer notification manager -->
+    <string name="channel_service_name">خدمة نقل</string>
+    <string name="channel_transfer_name">التحويلات الجارية</string>
+    <string name="channel_notification_name">إتمام النقل</string>
+
+    <!-- Transfer adapter -->
+    <string name="adapter_transfer_connecting">توصيل…</string>
+    <string name="adapter_transfer_transferring">النقل:٪ 1 $ d ٪٪</string>
+    <string name="adapter_transfer_failed">فشل:٪ 1 $ s</string>
+    <string name="adapter_transfer_succeeded">نجحت</string>
+    <string name="adapter_transfer_unknown">مجهول</string>
+    <string name="adapter_transfer_bytes">%1$s / %2$s</string>
+
+    <!-- Share activity -->
+    <string name="activity_share_label">حدد جهازًا من القائمة أدناه لتلقي النقل:</string>
+    <string name="activity_share_intent">لم يتم العثور على بيانات للمشاركة.</string>
+    <string name="no_data_found">لاتوجد بيانات</string>
+    <string name="process_error">حدث خطأ أثناء معالجة البيانات. أعد التحديث وحاول مرة أخرى</string>
+    <string name="activity_share_permissions">لا يمكن للتطبيق نقل البيانات دون إذن للوصول إلى التخزين.</string>
+    <string name="title_send">إرسال</string>
+    <string name="title_receive">تسلم</string>
+    <string name="activity_transfer_empty_text">لا عمليات نقل جارية</string>
+
+    <string name="SYNC">التزامن</string>
+    <string name="populatingData">تعبئة البيانات</string>
+    <string name="send">جاري إرسال البيانات …</string>
+    <string name="verify_receive">التحقق من البيانات وتخزينها في قاعدة البيانات</string>
+    <string name="sync_first">يرجى مزامنة بياناتك أولاً</string>
+    <string name="youCantDoTxn">لا يمكنك القيام بالمعاملة</string>
+    <string name="programNotEnable">البرنامج غير ممكن</string>
+    <string name="to">إلى</string>
+    <string name="noVouchersFound">لم يتم العثور على قسائم !!</string>
+
+    <string name="nallowedtxn">لا يسمح لك بإبطال المعاملة من هذا الجهاز</string>
+    <string name="no_txns">لم يتم العثور على معاملة لهذه البطاقة</string>
+    <string name="THB">THB : </string>
+    <string name="SyncReport">تقرير التزامن</string>
+    <string name="transactionUpdated">تم تحديث المعاملات بنجاح</string>
+
+    <string name="update_the_app">قم بتحديث التطبيق</string>
+    <string name="new_version_is_here">الإصدار الجديد من تطبيق الهاتف المحمول هنا.</string>
+    <string name="alert_latest_ver_msg">تم تثبيت أحدث إصدار من التطبيق بالفعل</string>
+    <string name="alert_apk_issue">هناك مشكلة في الملف ، يُرجى تحميل apk جديد</string>
+    <string name="update_size">حجم التحديث:</string>
+    <string name="mb">MB</string>
+    <string name="unableWrite">غير قادر على كتابة البيانات على البطاقة !!</string>
+    <string name="alert_rewrite">حدث خطأ أثناء كتابة البيانات ، انقر فوق "موافق" ثم انقر فوق البطاقة مرة أخرى.</string>
+    <string name="card_update">تم تحديث البطاقة بنجاح</string>
+    <string name="txnShouldSubmit">لا يمكنك إجراء المعاملة اليوم ، حتى لا يتم إرسال معاملات الأمس. انقر فوق موافق وقم بتقديم معاملاتك !!
+</string>
+    <string name="nosync">لم يتم العثور على التزامن !!</string>
+    <string name="NoOfDevicesSynced">عدد الأجهزة المتزامنة:</string>
+    <string name="TotalNoOfTxns">إجمالي عدد المعاملات:</string>
+    <string name="deviceId">رقم تعريف الجهاز:</string>
+    <string name="NoOfTxns">عدد المعاملات:</string>
+    <string name="syncDate">تاريخ المزامنة:</string>
+    <string name="YouSelectedTheCashCommodity">لقد حددت السلعة النقدية ، ولا يمكن أن تحتوي السلعة النقدية على UOM</string>
+    <string name="updtxns">تحميل المعاملات</string>
+    <string name="updsync">تحميل المزامنة المعلقة</string>
+    <string name="uploadBenficiary">تحميل المستفيد</string>
+    <string name="uploadAgentBiometric">وكيل تحميل البيومترية</string>
+    <string name="updTopups">تحميل سجلات التعبئة</string>
+    <string name="updarchiv">تحميل معاملات الأرشيف</string>
+    <string name="updatten">تحميل سجلات الحضور</string>
+    <string name="updact">تحميل سجلات النشاط</string>
+    <string name="submitBeforeUpload">لا يمكنك تحميل المعاملات ، حتى يتم تعليق المعاملات السابقة</string>
+    <string name="noTxns">لم يتم العثور على معاملات !!</string>
+    <string name="uploadedTransactions">تم تحميل المعاملات بنجاح</string>
+    <string name="uploadingTxns">تحميل المعاملات</string>
+    <string name="attendanceUploaded">تم تحميل سجل الحضور بنجاح</string>
+    <string name="noattendance">لم يتم العثور على سجلات الحضور !!</string>
+    <string name="uploadingAttendance">تحميل سجلات الحضور</string>
+    <string name="uploadingArchives">تحميل معاملات الأرشيف</string>
+    <string name="noarchive">لم يتم العثور على معاملات الأرشيف</string>
+    <string name="archiveUploaded">تم تحميل معاملات الأرشيف بنجاح</string>
+    <string name="uploadingTopups">تحميل سجلات التعبئة</string>
+    <string name="notopup">لم يتم العثور على سجل إعادة شحن !!</string>
+    <string name="topupUploaded">تم تحميل سجلات التعبئة بنجاح</string>
+    <string name="uploadingActivity">تحميل الأنشطة</string>
+    <string name="noactivities">لم يتم العثور على سجلات نشاط !!</string>
+    <string name="activityUploaded">تم تحميل سجلات النشاط بنجاح</string>
+    <string name="noagents">لا وكلاء لتحميل !!</string>
+    <string name="agentuploaded">تم تحميل الوكيل بنجاح</string>
+    <string name="uploadingBeneficiary">تحميل المستفيدين</string>
+    <string name="deviceDataSuccessfullyUpload">تم تحميل بيانات الجهاز بنجاح</string>
+    <string name="nobenf">لم يتم العثور على مستفيدين !!</string>
+    <string name="benfuploaded">تم تحميل المستفيد بنجاح</string>
+    <string name="uplodPending">تحميل المزامنة المعلق</string>
+    <string name="noSyncLogs">لم يتم العثور على سجلات تزامن !!</string>
+    <string name="syncSuccess">مزامنة السجلات التي تم تحميلها بنجاح</string>
+
+    <!--Data Sync and Network setup-->
+    <string name="no_device">لم تجد الأجهزة.
+</string>
+    <string name="connected_devices">الأجهزة المتصلة
+</string>
+    <string name="create_hotspot">إنشاء نقطة فعالة
+</string>
+    <string name="join_network">انضم إلى نقطة الاتصال</string>
+    <string name="already_connected_to_network">متصل بالفعل بالشبكة</string>
+    <string name="network_setup">إعداد الشبكة</string>
+    <string name="refresh_devices">تحديث الأجهزة</string>
+    <string name="label_me">ME</string>
+    <string name="sync_data">تزامن البيانات</string>
+    <string name="scan_device">أجهزة المسح.</string>
+    <string name="benf_bio_not_found">البيومترية المستفيد غير موجود</string>
+    <string name="biometrics_verify">تم التحقق البيومتري بنجاح … هل تريد مزامنة بيانات بنفيديون؟</string>
+    <string name="biometrics_already_verify">تم التحقق من البيومترية بالفعل ، هل تريد مزامنة بيانات بنفيدي.
+</string>
+    <string name="biometric_reject">رفض البيومترية</string>
+    <string name="biometric_reject_msg">البيانات البيومترية للمستفيد رفض من قبل مستخدم الويب.</string>
+    <string name="biometric_pending">تعليق البيومترية</string>
+    <string name="biometric_pending_msg">التحقق البيومتري للمستفيد معلق من قبل مستخدم الويب أو مزامنة البيانات مع حامل البطاقة.</string>
+    <string name="finger_print_verify">بصمة الإصبع غير متطابقة</string>
+    <string name="beneficiary_status_pending">المستفيد من الخادم وإعادة تنزيل المستفيد.</string>
+    <string name="beneficiary_status_verified">المستفيد من قسم التحقق من المستفيد.</string>
+    <string name="submit_before_sync">إرسال جميع المعاملات الخاصة بك قبل المزامنة</string>
+    <string name="app_mode_online">وضع تطبيق الجوال: عبر الإنترنت</string>
+    <string name="app_mode_offline">وضع تطبيق الهاتف: غير متصل</string>
+    <string name="app_update_alert">تم إصدار الإصدار الجديد لتطبيقات الهاتف المتحرك يرجى تحديث تطبيقك قبل تنزيل البيانات. انقر فوق "موافق" للمتابعة.</string>
+    <string name="alert_cart_empty">يرجى شراء البند</string>
+    <string name="auto_sync">المزامنة التلقائية قيد التقدم …</string>
+    <string name="cart">عربة التسوق</string>
+    <string name="alert_bluetooth_not_support">BlueTooth غير مدعوم في هذا الجهاز</string>
+    <string name="alert_bluetooth_off">تم تعطيل BlueTooth ، انقر فوق موافق لتشغيل BlueTooth</string>
+    <string name="IdentificationNumberLengthShouldBe">يجب أن يكون طول رقم الهوية:</string>
+    <string name="permission_all">يرجى تقديم الإذن المطلوب.</string>
+    <string name="noTopupForThisProgram">لم يتم العثور على تعبئة لهذا البرنامج !!</string>
+    <string name="VendorReceiptPrinted">تمت طباعة إيصال البائع بنجاح. هل تريد طباعة إيصال المستفيد؟</string>
+    <string name="somethingWentWrong">هناك خطأ ما</string>
+    <string name="failed">فشل</string>
+    <string name="fail">فشل</string>
+    <string name="data_receive_fail">فشل تلقي البيانات</string>
+    <string name="WifiHotspotCreated">تم إنشاء نقطة اتصال Wi-Fi</string>
+    <string name="Pleasesyncdatawithserver">يرجى مزامنة البيانات مع الخادم قبل التحديث.</string>
+    <string name="dataSend">تم إرسال البيانات بنجاح</string>
+    <string name="WifiHotspotCreationFail">فشل إنشاء نقطة اتصال Wi-Fi</string>
+
+    <!--Receipt Print-->
+    <string name="printSuccessfully">الطباعة بنجاح</string>
+    <string name="vendorPrinted">مطبوع بائع استلام</string>
+    <string name="printerError">خطأ في الطابعة</string>
+    <string name="receiptType">نوع الاستلام:</string>
+    <string name="PoweredByCompulynx">مدعوم من: Compulynx</string>
+    <string name="Compas">Compas eBeneficiary Management</string>
+    <string name="Time">زمن :</string>
+    <string name="benfReceipt">إيصال المستفيد</string>
+    <string name="vendorReceipt">إيصال البائع</string>
+    <string name="TotalDevicesSynced">تمت مزامنة إجمالي الأجهزة</string>
+    <string name="BenfName">أسم المستفيد</string>
+
+    <string name="error_apk_download">خطأ في تنزيل apk</string>
+    <string name="downloading">جارى التحميل</string>
+    <string name="na">غير متاح</string>
+    <string name="m">الذكر</string>
+    <string name="no_device_connected">لا يوجد جهاز متصل</string>
+    <string name="data_receive_success">تم استلام البيانات بنجاح</string>
+    <string name="sync_bnf_data_error">بيانات المستفيد غير متوفرة في الجهاز. يرجى تحديث المستفيد من الخادم.</string>
+    <string name="this_card_belongs_to">تنتمي هذه البطاقة إلى</string>
+    <string name="this_card_belongs_to_2">سيتم تنشيط هذه البطاقة فقط لرقم بطاقة %s.</string>
+    <string name="identication_num_col">رقم الهوية:</string>
+    <string name="minimum">الحد الأدنى</string>
+    <string name="warning">تحذير</string>
+    <string name="fingerprint_should_match">يجب مطابقة بصمات الأصابع !!!</string>
+    <string name="reason_for_not_sync_data">يرجى تقديم سبب لعدم مزامنة البيانات مع رقم تعريف الجهاز:</string>
+    <string name="empty_fields">الحقول الفارغة !!!</string>
+    <string name="joined_to">انضم ل</string>
+    <string name="user_password">كلمه السر</string>
+    <string name="enterPriceFor">أدخل سعر</string>
+    <string name="enterPrice">أدخل السعر</string>
+    <string name="PleaseEnterPrice">الرجاء إدخال السعر !!</string>
+    <string name="empty_password">الرجاء إدخال كلمة مرور المستخدم !!</string>
+    <string name="maxPriceCannotExceeds">السعر لا يمكن أن يتجاوز السعر الأقصى !!</string>
+    <string name="maxPriceShouldGreaterThanZero">السعر يجب أن يكون أكبر من الصفر !!</string>
+    <string name="invalid_password">رمز مرور خاطئ!!</string>
+    <string name="enterPassword">أدخل كلمة المرور</string>
+    <string name="commodity_in">السلع في</string>
+    <string name="enterReceiptNo">أدخل رقم الإيصال</string>
+    <string name="pleaseEnterReceiptNo">الرجاء إدخال رقم الإيصال !!</string>
+    <string name="noTopupFoundForReceipt">لم يتم العثور على شحن لرقم الإيصال هذا !!</string>
+    <string name="device_information">معلومات الجهاز</string>
+    <string name="model">نموذج</string>
+    <string name="ChangeAgentPassword">تغيير كلمة مرور الوكيل</string>
+    <string name="currentPassword">كلمة المرور الحالي</string>
+    <string name="newPassword">كلمة السر الجديدة</string>
+    <string name="confirmPassword">تأكيد كلمة المرور</string>
+    <string name="UpdatePassword">تطوير كلمة السر</string>
+    <string name="PleaseEnterCurrent">الرجاء إدخال كلمة المرور الحالية !!</string>
+    <string name="PleaseEnterNew">من فضلك أدخل كلمة سر جديدة !!</string>
+    <string name="PleaseEnterConfirm">الرجاء إدخال تأكيد كلمة المرور !!</string>
+    <string name="CurrentPasswordInvalid">كلمة المرور الحالية غير صالحة !!</string>
+    <string name="PasswordMisMatch">عدم تطابق كلمة المرور !!</string>
+    <string name="unableToChangePassword">غير قادر على تغيير كلمة المرور !!</string>
+    <string name="invalid_credential">شهادة اعتماد غير صالحة!!</string>
+    <string name="totalAmountIn">المبلغ الإجمالي في:</string>
+    <string name="newPin">دبوس جديد</string>
+    <string name="confirmPin">تأكيد PIN</string>
+    <string name="card_change_pin">انقر على البطاقة لتغيير الدبوس</string>
+    <string name="NewPinMatchConfirmPass">يجب أن يكون كلا الدبابيس متماثلين !!</string>
+    <string name="are_you_sure">هل أنت واثق؟ سيتم مسح كل تقدمك !!</string>
+    <string name="txn_already_done">تمت المعاملة بالفعل لهذا البرنامج !!</string>
+    <string name="alert_txn_capacity">قدرة البائع المستخدمة بالفعل لهذا البرنامج !!</string>
+    <string name="price">السعر :</string>
+    <string name="card_serial_no">الرقم التسلسلي للبطاقة :</string>
+    <string name="print_status_busy">الرجاء الانتظار … طابعة الجهاز مشغولة.</string>
+    <string name="print_status_high_temp">وصلت طابعة الجهاز إلى درجة حرارة أعلى.</string>
+    <string name="print_status_paper_lack">الرجاء إدخال لفة وطباعة.</string>
+    <string name="print_status_no_battery">حالة الطباعة لا بطارية.</string>
+    <string name="vendor_summary">تقرير ملخص البائع</string>
+    <string name="cash_amount_greater">يجب أن يكون المبلغ النقدي أكبر من 0!</string>
+
+
+</resources>

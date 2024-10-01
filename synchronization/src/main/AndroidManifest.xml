@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.compastbc.synchronization">
+
+    <application tools:node="merge">
+
+        <service
+            android:name=".transfer.TransferService"
+            android:enabled="true"
+            android:exported="false" /> <!-- Receiver for actions that might require the service to start -->
+        <!--<receiver android:name=".ui.synchronization.util.StartReceiver" />-->
+
+    </application>
+</manifest>

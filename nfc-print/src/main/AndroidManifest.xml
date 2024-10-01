@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.compastbc.nfcprint">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <uses-feature
+        android:name="android.hardware.wifi.direct"
+        android:required="true" /> <!-- NFC Permission -->
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+    <application tools:node="merge">
+
+        <!-- Pos device sdk declaration -->
+        <uses-library
+            android:name="com.pos.device"
+            android:required="false" />
+
+        <!-- NFC meta data start here -->
+        <meta-data
+            android:name="android.nfc.action.TECH_DISCOVERED"
+            android:resource="@xml/nfc_tech_filter" />
+        <meta-data
+            android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+            android:resource="@xml/device_filter" /> <!-- NFC meta data end here -->
+
+    </application>
+</manifest>

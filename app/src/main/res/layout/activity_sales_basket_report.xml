@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.reports.salesbasketreport.SalesBasketReport">
+
+    <include layout="@layout/layout_custom_toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/dview"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/datee"
+            android:padding="6dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/date"
+            android:layout_marginEnd="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/date_set"
+            android:layout_centerVertical="true"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frame">
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--App Keys-->
+    <string name="nfc_package_key">445d15b5f9505713dcdf7ec93ab9126f</string>
+    <!--<string name="nfc_offline_key">P8cHLNWJn+ebAe9RrmPOjHGwhWpeKzbqz7v0LuKF3w5ovmNTRkq/K/Nog6zrq17M39BBsO4yImvk1uRSsFQVTw==</string>-->
+
+    <!--App Message-->
+    <string name="Ok">OK</string>
+    <string name="alert">Alert!</string>
+    <string name="not_supported"> not supported</string>
+    <string name="card_not_supported">Card not supported</string>
+    <string name="timeout_error">Tap Card Timeout</string>
+    <!--<string name="process_cancel_by_user">Process cancelled by user</string>-->
+
+    <string name="card_error_data">Error processing data from this card</string>
+    <string name="cardNotActivated">This card is not activated!!</string>
+    <string name="card_read_fail">Card reading failed!! or Please tap the card properly.</string>
+
+</resources>

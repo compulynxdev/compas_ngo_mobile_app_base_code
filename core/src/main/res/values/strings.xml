@@ -1,0 +1,618 @@
+<resources>
+    <string name="app_name">eBeneficiary Management</string>
+
+    <!--App Keys-->
+    <string name="nfc_package_key">445d15b5f9505713dcdf7ec93ab9126f</string>
+    <string name="nfc_offline_key">P8cHLNWJn+ebAe9RrmPOjHGwhWpeKzbqz7v0LuKF3w5ovmNTRkq/K/Nog6zrq17M39BBsO4yImvk1uRSsFQVTw==</string>
+
+    <!--App Message-->
+    <string name="api_retry_error">Please retry!</string>
+    <string name="error">Error !</string>
+    <string name="Ok">OK</string>
+    <string name="alert">Alert!</string>
+    <string name="feature_error">This feature not supported by device</string>
+    <string name="some_error">Some Error Occurred!</string>
+    <string name="not_supported"> not supported</string>
+    <string name="card_not_supported">Card not supported</string>
+    <string name="timeout_error">Tap Card Timeout</string>
+    <string name="process_cancel_by_user">Process cancelled by user</string>
+    <string name="connection_error">Please check your internet connection and try again!</string>
+    <string name="alert_out_of_memory">Phone storage is full</string>
+    <string name="under_development">Under development</string>
+    <string name="under_development_nfc">NFC Under development</string>
+
+    <!--Server Message-->
+    <string name="UnauthorisedAccess">Unauthorised Access!!</string>
+    <string name="error_404">HTTP Status 404 – Not Found!!</string>
+    <string name="ServerError">Oops! We encountered a internal error. Please check again in a while.</string>
+
+    <!--NFC Message-->
+    <string name="error_nfc_not_support">Your device is not support NFC</string>
+    <string name="error_nfc_disable">Please enable NFC</string>
+    <string name="msg_enable_nfc">Turn on NFC</string>
+
+    <!--FingerPrintScanner Message-->
+    <string name="error_fp_scanner">Getting the Scanner Ready</string>
+    <string name="error_fp_re_scanner">Reinitialise Scanner</string>
+    <string name="please_wait">Please wait…</string>
+    <string name="secugen_fingerprint">SecuGen Fingerprint</string>
+    <string name="fingerprint_init_failed">Fingerprint device initialization failed!</string>
+    <string name="fingerprint_device_not_found">Please attach fingerprint device.</string>
+    <string name="secugen_fingerprint_not_found">SecuGen fingerprint sensor not found!</string>
+
+    <!--Login Controller Message-->
+    <string name="next_button">Next</string>
+    <string name="username">Username</string>
+    <string name="invalid_username">Please enter valid username.</string>
+    <string name="empty_username">Please enter username.</string>
+    <string name="NotHaveSpace">You don\'t have sufficient amount of space.... Please free some space first</string>
+    <string name="NotGettingLocation">Not able to get the location. Please try after sometime</string>
+
+    <!--Pin Controller Message-->
+    <string name="Zero">0</string>
+    <string name="One">1</string>
+    <string name="Two">2</string>
+    <string name="Three">3</string>
+    <string name="Four">4</string>
+    <string name="Five">5</string>
+    <string name="Six">6</string>
+    <string name="Seven">7</string>
+    <string name="Eight">8</string>
+    <string name="Nine">9</string>
+    <string name="Ten">10</string>
+    <string name="Enter_Pin">Enter Pin</string>
+    <string name="Login">Login</string>
+    <string name="Clear">Clear</string>
+    <string name="InvalidPassword">Invalid Password....Please try again</string>
+
+    <!--UserFpEnrollment Controller Message-->
+    <string name="username_colum">Username : </string>
+    <string name="save">Save</string>
+    <string name="district">District</string>
+    <string name="district_colm">District : </string>
+
+    <!--ImageCapture Message-->
+    <string name="capture">Capture</string>
+
+    <!--Finger Capture Controller Message-->
+    <string name="error_duplicate_title">Duplicate Error</string>
+    <string name="error_quality_title">Quality Error</string>
+    <string name="error_capture_title">Capture Error</string>
+    <string name="msg_recapture">Please Recapture again!</string>
+    <string name="msg_already_capture">This fingerprint already Captured!</string>
+
+    <!--Image Selection-->
+    <string name="take_photo">Camera</string>
+    <string name="cancel">Cancel</string>
+    <string name="gallery">Gallery</string>
+    <string name="select">Select</string>
+
+    <!--Other Controller Message-->
+    <string name="About">About</string>
+    <string name="Configurations">Configurations</string>
+    <string name="IP_ADDRESS">Input your IP address</string>
+    <string name="PORT_NUMBER">Input your Port number</string>
+    <string name="MacID">MAC ID</string>
+    <string name="Settings">Settings</string>
+    <string name="EmptyInputs">Please Input Fields!!!</string>
+    <string name="compas_tbc_v">COMPAS eBeneficiary Management v</string>
+    <string name="InvalidRole">Invalid role!! unauthorised access</string>
+    <string name="noUsers">No users found !!!</string>
+    <string name="InvalidUsername">Invalid username !!!</string>
+    <string name="Transactions">Transactions</string>
+    <string name="image">IMAGE</string>
+    <string name="Update">Update</string>
+    <string name="CardActivation">Card Activation</string>
+    <string name="CardBalance">Card Balance</string>
+    <string name="ChangeCardPin">Change Card Pin</string>
+    <string name="FormatCard">Format Card</string>
+    <string name="Reports">Reports</string>
+    <string name="VoidTransaction">Void Transaction</string>
+    <string name="ErrorInDownload">Error in downloading data!!</string>
+    <string name="Menus">Menus</string>
+    <string name="Beneficiary">Beneficiary</string>
+    <string name="LogOut">Log Out</string>
+    <string name="SummaryReports">Summary Reports</string>
+    <string name="SalesTransactionHistory">Sales/Transaction History Report</string>
+    <string name="sales_txn_history_title">Sales/Transaction History</string>
+    <string name="voidReport">Void Transaction Report</string>
+    <string name="sales">Sales Basket Report</string>
+    <string name="Xreports">X-Report</string>
+    <string name="commodity_report">Daily Commodity Report</string>
+    <string name="submitreports">Submit Transaction Report</string>
+
+    <!--Beneficiary tab-->
+    <string name="CreateBeneficiary">Create Beneficiary</string>
+    <string name="EnrollBeneficiary">Enroll Beneficiary</string>
+    <string name="BeneficiaryList">Beneficiary List</string>
+    <string name="beneficiary_detail">Beneficiary Details</string>
+    <string name="beneficiary_edit">Edit Beneficiary</string>
+    <string name="VerifyBeneficiary">Verify Beneficiary</string>
+
+    <!--Create Beneficiary-->
+    <string name="please_fill_the_following_beneficiary_information">Please Fill The Following Beneficiary Information</string>
+    <string name="first_name">First Name</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="enter_last_name">Enter Last Name</string>
+    <string name="identification_type">Identification Type : </string>
+    <string name="adhar">Aadhar Card</string>
+    <string name="IdentificationNumber">Identification Number</string>
+    <string name="IdentificationNo">Identification No</string>
+    <string name="EnterIdNo">Enter Identification Number</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="select_date_of_birth">Select date of birth</string>
+    <string name="selectgender">Please Select Gender :</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="correspondence_address">Correspondence Address</string>
+    <string name="enter_address">Enter your address</string>
+    <string name="benfGroup">Beneficiary Group</string>
+    <string name="location">Location : </string>
+    <string name="get_signature">Get Signature</string>
+    <string name="clear_pad">Clear pad</string>
+    <string name="save_signature">Save signature</string>
+    <string name="please_enter_name">Please enter name</string>
+    <string name="please_enter_first_name">Please enter first name</string>
+    <string name="please_enter_last_name">Please enter last name</string>
+    <string name="please_select_gender">Please select gender</string>
+    <string name="please_provide_gender">Please select gender!!</string>
+    <string name="please_select_dob">Please select your DOB</string>
+    <string name="enter_identificationno">Please enter your identification number</string>
+    <string name="please_provide_address">Please provide your address</string>
+
+    <string name="reports">Reports</string>
+    <string name="agreement">I agree the terms and conditions</string>
+    <string name="ScanQr">Scan QR code</string>
+    <string name="ManuallyActivate">Manually Activate</string>
+    <string name="activate">Activate</string>
+    <string name="Programme">Programme</string>
+    <string name="gender">Gender</string>
+    <string name="Name">Name</string>
+    <string name="CardNumber">Card Number</string>
+    <string name="CardNumberColon">Card Number : </string>
+    <string name="CardNo">Card No</string>
+    <string name="qrerror">Error while scanning the QR code</string>
+    <string name="success">Success</string>
+    <string name="BeneficiaryAdded">Beneficiary added successfully</string>
+    <string name="beneficiary_update">Beneficiary updated successfully</string>
+    <string name="PleaseCaptureImage">Please Capture Image!!</string>
+    <string name="PleaseCaptureFingerPrints">Please Capture Finger Prints!!</string>
+    <string name="AgentBiometricSaved">Agent biometrics saved successfully</string>
+    <string name="MobileNumber">Mobile Number</string>
+    <string name="enter_mobile">Enter mobile number</string>
+    <string name="search">Search</string>
+    <string name="select_criteria">  Search Criteria</string>
+    <string name="SearchVia">Search Via :</string>
+    <string name="PleaseSelectCriteria">Please select search criteria!!</string>
+    <string name="PleaseEnterInput">Please enter inputs</string>
+
+    <string name="BiometricAlreadyCaptured">Biometrics already captured</string>
+
+    <string name="Enroll">Enroll</string>
+    <string name="False">False</string>
+    <string name="True">True</string>
+    <string name="biostatus">Bio Status</string>
+    <string name="datee">25/10/2010</string>
+
+    <string name="name">Name : </string>
+    <string name="IdNoColon">Identification Number : </string>
+
+    <string name="MinimumFingerError">fingers should be captured !!</string>
+    <string name="BiometricUploaded">Biometrics uploaded successfully.</string>
+
+    <!--Card Activate Controller-->
+    <string name="card_tap_activate">Tap the card for activation</string>
+    <string name="card_activated">Card activated successfully</string>
+    <string name="card_activate_fail">Card not successfully activated. Please tap card and wait</string>
+
+    <!--Card Format Controller-->
+    <string name="card_format">Formatting card</string>
+    <string name="card_remove">Please don\'t remove the card…</string>
+    <string name="card_tap_format">Tap To Format Card</string>
+    <string name="card_format_success">Card formatted successfully</string>
+    <string name="card_error_format">Error formatting this card</string>
+
+    <!--Card Balance Controller-->
+    <string name="card_reading">Reading the card</string>
+    <string name="card_tap_check_bal">Tap Card To Check Balance</string>
+    <string name="card_error_data">Error processing data from this card</string>
+    <string name="card_error_read_data">Error occurred while reading data from the card</string>
+    <string name="card_error_write_data">Error occurred while writing data to the card</string>
+    <string name="no_topups">No topups found on this card</string>
+
+    <!--Verify Beneficiary Controller-->
+    <string name="card_tap_benf_info">Tap Card To Beneficiary Info</string>
+    <string name="card_tap_purchase">Tap To Purchase</string>
+    <string name="great">Great</string>
+    <string name="checkTxn">Tap card to fetch the transaction</string>
+    <string name="cardHolderInfo">Card Holder Name : </string>
+    <string name="newpass">New Password</string>
+    <string name="confirmpass">Confirm Password</string>
+    <string name="NewPassMatchConfirmPass">Both passwords should be same!</string>
+    <string name="card_change_password">Tap card to change password</string>
+    <string name="tap_right_card">Please tap the right card!!</string>
+    <string name="change_password_successfully">Pin changed successfully</string>
+    <string name="UnableToWrite">Unable to write data to this card!!</string>
+    <string name="UnableToRead">Unable to read the data. Please ensure that this card is activated</string>
+    <string name="fetching_card_data">Please wait while fetching card data..</string>
+    <string name="card_pin_size">Card pin size should four</string>
+    <string name="please_provide_input_for_update">Please provide inputs for updating details!!</string>
+    <string name="data_updated">Data updated successfully</string>
+    <string name="verify">Verify</string>
+    <string name="txt_no_benf">No beneficiaries found</string>
+    <string name="card_tap_to_purchase">Tap card to purchase</string>
+
+    <!-- Transactions strings-->
+    <string name="CardBlocked">This card is already blocked!!</string>
+    <string name="cardNotActivated">This card is not activated!!</string>
+    <string name="card_read_fail">Card reading failed!! or Please tap the card properly.</string>
+    <string name="card_clear_format">Are you sure, you want to clear all data stored in the card?</string>
+    <string name="NoTopups">No topups found!!</string>
+    <string name="NoPrograms">No programmes found!!</string>
+    <string name="touch_to_verify">Touch to verify</string>
+    <string name="Vouchers">Vouchers</string>
+    <string name="NoVouchers">No vouchers found!!</string>
+    <string name="Services">Services</string>
+    <string name="NoServices">No services found!!</string>
+    <string name="NotAbleToGetUom">Not able to get the UOM!!</string>
+    <string name="Purchase">Purchase</string>
+    <string name="SelectUom">Select UOM</string>
+    <string name="Quantity">Quantity</string>
+    <string name="MaxPrice">Max Price :</string>
+    <string name="Cash">Cash</string>
+    <string name="ProgrammeName">Programme Name</string>
+    <string name="Value">Value</string>
+    <string name="NoBenfFound">No beneficiary found!!</string>
+    <string name="PleaseEnterQuantity">Please enter quantity!!</string>
+    <string name="PleaseSelectUom">Please select uom!!</string>
+    <string name="AmountExceeds">The total amount exceeds the allocated amount!!</string>
+    <string name="EmptyCart">You had selected some services… Either do the transactions or clear your cart!!</string>
+    <string name="noitems">No. of Items :</string>
+    <string name="totalPrice">Total Price :</string>
+    <string name="submit">Submit</string>
+    <string name="Yes">Yes</string>
+    <string name="removeSure">Are you sure ?</string>
+    <string name="removeproduct">This will remove the selected product. The action is irreversible.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="PleaseWait">Please Wait!</string>
+    <string name="TranscationProgress">Transaction is in progress…</string>
+    <string name="NotValidCard">This is not a valid card for transaction!!</string>
+    <string name="transactionSuccess">Transaction done successfully. Click OK to print receipt.</string>
+    <string name="PleaseEnterAmount">Please enter amount of cash!!</string>
+    <string name="tapVoid">Tap card to void transaction</string>
+    <string name="receiptNo">Receipt No. :</string>
+    <string name="Date_Col">Date :</string>
+    <string name="tAmt">Total Amount :</string>
+    <string name="tapToVoid">Tap card to void the transaction…</string>
+    <string name="SuccessVoid">Transaction void successfully</string>
+    <string name="TotalCardHolders">Total card holders :</string>
+    <string name="TotalTopups">Total topups :</string>
+    <string name="TotalCommodity">Total commodities :</string>
+    <string name="TotalTransaction">Total transactions :</string>
+    <string name="BlockCard">Block cards :</string>
+    <string name="TotalTopupLogs">Total topup logs :</string>
+    <string name="line">-----------------------------------------------------------------</string>
+    <string name="stringDate">12/03/2017</string>
+    <string name="line1">--------------------------------------------------------------------</string>
+    <string name="purvalue">Purchase Value in </string>
+    <string name="NetSales">Net Sales :</string>
+    <string name="VoidAmount">Total Void Amount :</string>
+    <string name="salesAmt">Sales Amount :</string>
+    <string name="voidCount">Void Count :</string>
+    <string name="txnCount_col">Transaction Count :</string>
+    <string name="txnCount">Transaction Count</string>
+    <string name="Print">Print</string>
+    <string name="noItem">No item(s) purchased on this day</string>
+    <string name="filter_icon">Filter Icon</string>
+    <string name="filteration">Filteration</string>
+    <string name="reset">Reset</string>
+    <string name="filter">Filter</string>
+    <string name="endDate">End Date :</string>
+    <string name="startDate">Start Date :</string>
+    <string name="Commodity">Commodity Name :</string>
+    <string name="NoTransaction">No transactions found!!</string>
+    <string name="transId">Transaction Id :</string>
+    <string name="Amount">Amount</string>
+    <string name="Amount_Col">Amount :</string>
+    <string name="Date">Date</string>
+    <string name="NoTransactionCommodity">No transaction commodities found!!</string>
+    <string name="CommodityName">Commodity Name</string>
+    <string name="TotalAmount">Total Amount :</string>
+    <string name="totalAmount">Total Amount</string>
+    <string name="benfCount">Beneficiaries</string>
+    <string name="CategoryName">Category Name</string>
+    <string name="ProductName">Product Name</string>
+    <string name="Uom">Uom</string>
+    <string name="PrintedSuccessfully">Printed Successfully</string>
+    <string name="PrinterError">Error occurred while printing!!</string>
+    <string name="PrinterNotPaired">Could not get address of the printer; check if the printer has been paired!!</string>
+    <string name="NoDataToPrint">No data to print!!</string>
+    <string name="NoBiometricFound">No biometrics found!!</string>
+    <string name="NoFPMatch">No finger prints match!!</string>
+    <string name="LowFPQuality">Quality Error Please Try Again!!</string>
+    <string name="NotInitialise">Fingerprint Scanner Not Initialised!!</string>
+    <string name="FingerPrintNotMatched">Fingers does\'nt matched!!</string>
+    <string name="NoDataToDownload">No data to download!!</string>
+    <string name="unablepdf">Unable to generate pdf!!</string>
+    <string name="generatedPdf">Pdf generated successfully.</string>
+    <string name="startDateWithoutColon">Start Date</string>
+    <string name="endDateWithoutColon">End Date</string>
+    <string name="selectProgram">Select Program</string>
+    <string name="selectCategory">Select Category</string>
+    <string name="selectProduct">Select Product</string>
+    <string name="selectBeneficiary">Select Beneficiary</string>
+    <string name="pleaseSelectStartDate">Please select start date!!</string>
+    <string name="pleaseSelectEndDate">Please select end date!!</string>
+    <string name="pleaseSelectProgram">Please select program!!</string>
+    <string name="pleaseSelectCategory">Please select category before product!!</string>
+    <string name="pleaseSelectCommodity">Please select commodity before uom!!</string>
+    <string name="NoCategory">No category found!!</string>
+    <string name="NoCommodity">No commodity found!!</string>
+    <string name="NoUoms">No uom found!!</string>
+    <string name="NoBeneficiaries">No beneficiaries found!!</string>
+    <string name="titleName">Title</string>
+    <string name="col1">col1</string>
+    <string name="col2">col2</string>
+    <string name="col3">col3</string>
+    <string name="maxPrice">Max Price</string>
+    <string name="sessionTimeOut">Session Time Out!!</string>
+    <string name="noInternet">No Internet</string>
+    <string name="qty">Qty :</string>
+    <string name="openingBal">Opening Balance :</string>
+    <string name="txnValue">Transaction Value :</string>
+    <string name="currentBal">Current Balance :</string>
+
+    <array name="serviceSpinner">Select Uom</array>
+    <string name="alert_exit">Press back again to exit</string>
+    <string name="apkIsOnline"> works in offline mode. Kindly install offline mode application and try again!!</string>
+    <string name="This">This</string>
+    <string name="user">user</string>
+    <string name="language">Select Language</string>
+    <string name="english">English</string>
+    <string name="arabic">Arabic</string>
+    <string name="change_language">Change Language</string>
+    <string name="done">Done</string>
+    <string name="Master">Master</string>
+
+    <string name="CardHolders">Card Holders</string>
+    <string name="PleaseUploadPendindTrasactionsAndArchiveTransactions">Please upload the pending transactions and archive transactions before updating..</string>
+    <string name="PleaseUploadBeneficiaries">Please upload beneficiaries data, before updating.....</string>
+    <string name="PleaseUploadAgents">Please upload agents data before updating.....</string>
+    <string name="DataUpdated">Data updated successfully</string>
+    <string name="downloadingMaster">Downloading Master</string>
+    <string name="downloadingBeneficiary">Downloading Beneficiary</string>
+    <string name="Topups">Topups</string>
+    <string name="Beneficiaries">Beneficiaries</string>
+    <string name="zeroPercent">0 % done please wait…</string>
+    <string name="Received">Received</string>
+    <string name="Expected">Expected</string>
+    <string name="Progress">Progress</string>
+    <string name="downloadTopup">Downloading Topup</string>
+    <string name="Notopupsdownloaded">No topups downloaded!!</string>
+    <string name="fingerprintEnrollmentNotConfigured">Fingerprint Enrollment is not configured.</string>
+    <string name="successBiometricCapture">Biometric data updated successfully.</string>
+    <string name="idNotExist">Identification number not exist</string>
+    <string name="cardNotExist">Card number does not exist</string>
+    <string name="yourBioStatusIs">Your bio status is</string>
+    <string name="KindlyApprove">Kindly approve</string>
+
+
+    <!-- Transfer service -->
+    <string name="service_transfer_title">Compas Transfer</string>
+    <string name="service_transfer_server_title">Compas Service</string>
+    <string name="service_transfer_server_listening_text">Listening for incoming transfers</string>
+    <string name="service_transfer_status_receiving">Receiving items from %1$s…</string>
+    <string name="service_transfer_status_sending">Sending items to %1$s…</string>
+    <string name="service_transfer_status_success">Transfer with %1$s completed</string>
+    <string name="service_transfer_status_error">Transfer with %1$s failed: %2$s</string>
+    <string name="service_transfer_unknown_device">[unknown]</string>
+    <string name="service_transfer_notification_url">URL</string>
+
+    <!-- Transfer notification manager -->
+    <string name="channel_service_name">Transfer Service</string>
+    <string name="channel_transfer_name">Ongoing Transfers</string>
+    <string name="channel_notification_name">Transfer Completion</string>
+
+    <!-- Transfer adapter -->
+    <string name="adapter_transfer_connecting">Connecting…</string>
+    <string name="adapter_transfer_transferring">Transferring: %1$d%%</string>
+    <string name="adapter_transfer_failed">Failed: %1$s</string>
+    <string name="adapter_transfer_succeeded">Succeeded</string>
+    <string name="adapter_transfer_unknown">unknown</string>
+    <string name="adapter_transfer_bytes">%1$s / %2$s</string>
+
+    <!-- Share activity -->
+    <string name="activity_share_label">Select a device from the list below to receive the transfer:</string>
+    <string name="activity_share_intent">No data found to share.</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="process_error">Error processing data.Refresh and try again</string>
+    <string name="activity_share_permissions">Compas cannot transfer data without permission to access storage.</string>
+    <string name="title_send">Send</string>
+    <string name="title_receive">Receive</string>
+    <string name="activity_transfer_empty_text">No transfers in progress</string>
+
+    <string name="SYNC">Synchronization</string>
+    <string name="populatingData">Populating Data</string>
+    <string name="send">Sending the data…</string>
+    <string name="verify_receive">Verify and Storing data in Database</string>
+    <string name="sync_first">Please synchronise your data first</string>
+    <string name="youCantDoTxn">You can\'t do transaction</string>
+    <string name="programNotEnable">program is not enable</string>
+    <string name="to">to</string>
+    <string name="noVouchersFound">No vouchers found!!</string>
+
+    <string name="nallowedtxn">You are not allowed to void the transaction from this device</string>
+    <string name="no_txns">No transaction found for this card</string>
+    <string name="THB">THB : </string>
+    <string name="SyncReport">Synchronization Report</string>
+    <string name="transactionUpdated">Transactions updated successfully</string>
+
+    <string name="update_the_app">Update the app</string>
+    <string name="new_version_is_here">Compas New Version is here.</string>
+    <string name="alert_latest_ver_msg">Compas latest version already installed</string>
+    <string name="alert_apk_issue">There is some issue with file, Please upload new apk</string>
+    <string name="update_size">Update Size:</string>
+    <string name="mb">MB</string>
+    <string name="unableWrite">Unable to write data to card!!</string>
+    <string name="card_update">Card updated successfully</string>
+    <string name="txnShouldSubmit">You can\'t do the transaction today, till the yesterday\'s transactions are not submit. Click OK and submit your transactions!!</string>
+    <string name="nosync">No synchronisation found!!</string>
+    <string name="NoOfDevicesSynced">No. of devices synced :</string>
+    <string name="TotalNoOfTxns">Total no. of txns :</string>
+    <string name="deviceId">Device Id :</string>
+    <string name="NoOfTxns">No. of txns :</string>
+    <string name="syncDate">Synced Date :</string>
+    <string name="YouSelectedTheCashCommodity">You selected the cash commodity, and cash commodity can\'t contain UOM</string>
+    <string name="updtxns">Upload Transactions</string>
+    <string name="updsync">Upload Pending Synchronisation</string>
+    <string name="uploadBenficiary">Upload Beneficiary</string>
+    <string name="uploadAgentBiometric">Upload Agent Biometric</string>
+    <string name="updTopups">Upload TopupLogs</string>
+    <string name="updarchiv">Upload Archive Transactions</string>
+    <string name="updatten">Upload Attendance Logs</string>
+    <string name="updact">Upload Activity Logs</string>
+    <string name="submitBeforeUpload">You are not able to upload the transactions, till the previous transactions are pending to submit</string>
+    <string name="noTxns">No transactions found!!</string>
+    <string name="uploadedTransactions">Transactions uploaded successfully</string>
+    <string name="uploadingTxns">Uploading Transactions</string>
+    <string name="attendanceUploaded">Attendance log uploaded successfully</string>
+    <string name="noattendance">No attendance logs found!!</string>
+    <string name="uploadingAttendance">Uploading attendance logs</string>
+    <string name="uploadingArchives">Uploading Archive Transactions</string>
+    <string name="noarchive">No archive transactions found</string>
+    <string name="archiveUploaded">Archive transactions uploaded successfully</string>
+    <string name="uploadingTopups">Uploading topup logs</string>
+    <string name="notopup">No topup log found!!</string>
+    <string name="topupUploaded">Topup logs uploaded successfully</string>
+    <string name="uploadingActivity">Uploading activities</string>
+    <string name="noactivities">No activity logs found!!</string>
+    <string name="activityUploaded">Acitivity logs uploaded successfully</string>
+    <string name="noagents">No agents to upload!!</string>
+    <string name="agentuploaded">Agent uploaded successfully</string>
+    <string name="uploadingBeneficiary">Uploading beneficiaries</string>
+    <string name="deviceDataSuccessfullyUpload">Device data uploaded successfully</string>
+    <string name="nobenf">No beneficiaries found!!</string>
+    <string name="benfuploaded">Beneficiary uploaded successfully</string>
+    <string name="uplodPending">Uploading Pending Synchronisations</string>
+    <string name="noSyncLogs">No sync logs found!!</string>
+    <string name="syncSuccess">Sync logs uploaded successfully</string>
+
+    <!--Data Sync and Network setup-->
+    <string name="no_device">No devices found.</string>
+    <string name="connected_devices">Connected Devices</string>
+    <string name="create_hotspot">Create Hotspot</string>
+    <string name="join_network">Join Hotspot</string>
+    <string name="already_connected_to_network">Already connected to network</string>
+    <string name="network_setup">Network Setup</string>
+    <string name="refresh_devices">Refresh Devices</string>
+    <string name="label_me">ME</string>
+    <string name="sync_data">Synchronize Data</string>
+    <string name="scan_device">Scanning Devices.</string>
+    <string name="benf_bio_not_found">Beneficiary biometric not found</string>
+    <string name="biometrics_verify">Biometric verify successfully.....\nDo you want to sync benficiary.</string>
+    <string name="biometrics_already_verify">Biometric already verified, do you want to sync benficiary data.</string>
+    <string name="biometric_reject">Biometric Reject</string>
+    <string name="biometric_reject_msg">Beneficiary biometric data Reject by web user.</string>
+    <string name="biometric_pending">Biometric Pending</string>
+    <string name="biometric_pending_msg">Beneficiary biometric verification is pending by web user or sync data with card holder.</string>
+    <string name="finger_print_verify">Fingerprint not matched</string>
+    <string name="beneficiary_status_pending">beneficiary from server and redownload beneficiary.</string>
+    <string name="beneficiary_status_verified">beneficiary from verify beneficiary section.</string>
+    <string name="submit_before_sync">Submit your all transactions before synchronization</string>
+    <string name="app_mode_online">App Mode: Online</string>
+    <string name="app_mode_offline">App Mode: Offline</string>
+    <string name="app_update_alert">"Compas new version is released kindly update your app before downloading data. Click OK to continue."</string>
+    <string name="alert_cart_empty">Please purchase item</string>
+    <string name="auto_sync">Automatic sync in progress…</string>
+    <string name="cart">Cart</string>
+    <string name="alert_bluetooth_not_support">BlueTooth not supported in this device</string>
+    <string name="alert_bluetooth_off">BlueTooth disabled, click OK to turn on BlueTooth</string>
+    <string name="IdentificationNumberLengthShouldBe">Identification number length should be :</string>
+    <string name="permission_all">Please provide the requested permission.</string>
+    <string name="noTopupForThisProgram">No topup found for this program!!</string>
+    <string name="VendorReceiptPrinted">Vendor receipt printed successfully. Do you want to print \"Beneficiary Receipt\" ?</string>
+    <string name="somethingWentWrong">Something went wrong</string>
+    <string name="failed">Failed</string>
+    <string name="fail">Fail</string>
+    <string name="data_receive_fail">Data receive fail</string>
+    <string name="WifiHotspotCreated">Wifi Hotspot Created</string>
+    <string name="Pleasesyncdatawithserver">Please sync data with server before updating.</string>
+    <string name="dataSend">Data send successfully</string>
+    <string name="WifiHotspotCreationFail">Wifi hotspot creation failed</string>
+
+    <!--Receipt Print-->
+    <string name="printSuccessfully">Print Successfully</string>
+    <string name="vendorPrinted">VENDOR_RECEIPT_PRINTED</string>
+    <string name="printerError">Printer Error</string>
+    <string name="receiptType">Receipt Type :</string>
+    <string name="PoweredByCompulynx">Powered By: Compulynx</string>
+    <string name="Compas">Compas eBeneficiary Management</string>
+    <string name="Time">Time :</string>
+    <string name="benfReceipt">Beneficiary Receipt</string>
+    <string name="vendorReceipt">Vendor Receipt</string>
+    <string name="TotalDevicesSynced">Total Devices Synced</string>
+    <string name="BenfName">Beneficiary Name</string>
+
+    <string name="error_apk_download">Error in apk downloading</string>
+    <string name="downloading">Downloading</string>
+    <string name="na">NA</string>
+    <string name="m">M</string>
+    <string name="no_device_connected">No device connected</string>
+    <string name="data_receive_success">Data received successfully</string>
+    <string name="sync_bnf_data_error">Beneficiary Data not available in device. Please update beneficiary from server.</string>
+    <string name="this_card_belongs_to">This card belongs to</string>
+    <string name="this_card_belongs_to_2">This card will only activate for %s card number.</string>
+    <string name="identication_num_col">Identification No :</string>
+    <string name="minimum">Minimum</string>
+    <string name="warning">Warning</string>
+    <string name="fingerprint_should_match">Finger prints should be matched!!!</string>
+    <string name="reason_for_not_sync_data">Please provide reason for not synchronising data with device Id :</string>
+    <string name="empty_fields">Empty Fields!!!</string>
+    <string name="joined_to">Joined to</string>
+    <string name="user_password">Password</string>
+    <string name="empty_password">Please enter user password!!</string>
+    <string name="enterPriceFor">Enter Price For </string>
+    <string name="enterPrice">Enter Price</string>
+    <string name="PleaseEnterPrice">Please enter price!!</string>
+    <string name="maxPriceCannotExceeds">You do not have sufficient balance to purchase items!!</string>  <!--Price cannot be exceeds than max price!!-->
+    <string name="maxPriceShouldGreaterThanZero">Price should be greater than zero!!</string>
+    <string name="invalid_password">Invalid Password!!</string>
+    <string name="enterPassword">Enter Password</string>
+    <string name="commodity_in">Commodities In</string>
+    <string name="enterReceiptNo">Enter Receipt Number</string>
+    <string name="pleaseEnterReceiptNo">Please enter receipt number!!</string>
+    <string name="noTopupFoundForReceipt">No topup found for this receipt number!!</string>
+    <string name="device_information">Device Information</string>
+    <string name="model">Model</string>
+    <string name="ChangeAgentPassword">Change Agent Password</string>
+    <string name="currentPassword">Current Password</string>
+    <string name="newPassword">New Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="UpdatePassword">Update Password</string>
+    <string name="PleaseEnterCurrent">Please enter current password!!</string>
+    <string name="PleaseEnterNew">Please enter new password!!</string>
+    <string name="PleaseEnterConfirm">Please enter confirm password!!</string>
+    <string name="CurrentPasswordInvalid">Current password invalid!!</string>
+    <string name="PasswordMisMatch">Password mismatch!!</string>
+    <string name="unableToChangePassword">Unable to change password!!</string>
+    <string name="invalid_credential">Invalid Credential!!</string>
+    <string name="totalAmountIn">Total Amount In :</string>
+    <string name="newPin">New Pin</string>
+    <string name="confirmPin">Confirm Pin</string>
+    <string name="card_change_pin">Tap card to change pin</string>
+    <string name="NewPinMatchConfirmPass">Both pins should be same!!</string>
+    <string name="are_you_sure">Are you sure? Your all progress will be cleared!!</string>
+    <string name="txn_already_done">The transaction was already done for this program!!</string>
+    <string name="alert_txn_capacity">Vendor capacity already used for this program!!</string>
+    <string name="price">Price :</string>
+    <string name="card_serial_no">Card Serial No :</string>
+    <string name="print_status_busy">Please wait… Device printer is busy.</string>
+    <string name="print_status_high_temp">Device printer reached its higher temperature.</string>
+    <string name="print_status_paper_lack">Please insert the roll and print.</string>
+    <string name="print_status_no_battery">Print status no battery.</string>
+    <string name="vendor_summary">Vendor Summary Report</string>
+    <string name="are_you_sure_logout">"Are you sure, you want to logout ? "</string>
+
+</resources>

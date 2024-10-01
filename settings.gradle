@@ -1,0 +1,5 @@
+include ':nfc-print'
+include ':synchronization'
+include ':core'
+include ':fingerprint'
+include ':app'

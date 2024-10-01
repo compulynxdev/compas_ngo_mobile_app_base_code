@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.reports.commodityreport.CommodityReportActivity">
+
+    <include layout="@layout/layout_custom_toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/dview"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/datee"
+            android:padding="6dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:id="@+id/date"
+            android:layout_marginEnd="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/date_set"
+            android:layout_centerVertical="true"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="@string/NoTransactionCommodity"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relative"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="@string/CommodityName"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="italic"
+                android:textAlignment="center"
+                android:text="@string/Amount"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+-->
+
+<!--
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/v1"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/linear"
+            android:background="@color/colorPrimary"/>
+-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/commodity_row"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:id="@+id/recycler_view"/>
+
+        <!--
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:id="@+id/v2"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/recycler_view"
+            android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/v2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="center"
+                android:text="@string/TotalAmount"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="italic"
+                android:id="@+id/value"
+                android:textAlignment="center"
+                android:text="@string/Value"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                />
+
+        </LinearLayout>
+-->
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
